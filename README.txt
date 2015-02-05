@@ -58,8 +58,6 @@ If you'd like to contribute to this plugin, you can find it <a href="https://git
 
 https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JDCQYELVWT6T6
 
-**Other Credits:**
-
 == Installation ==
 
 1. Unzip plugin files and upload them under your '/wp-content/plugins/' directory.
