@@ -173,7 +173,6 @@ function birds_apply_preview_css() {
                 </script>
             ';
     }
-
     echo '<style>
         #pre_bg {
             background: '.$bcl_bg_color.';
@@ -427,7 +426,7 @@ function birds_custom_login_css() {
     echo '
 
         <style type="text/css">
-            body {
+         body {
                 background: '.$bcl_bg_color.' !important;
             }
             .login form {
@@ -454,6 +453,7 @@ function birds_custom_login_css() {
                 background-size: 100% !important;
                 background-position: center top;
                 background-repeat: no-repeat;
+                color: #999;
                 height: '.$logo_height.'px !important;
                 font-size: 20px;
                 font-weight: 400;
@@ -461,8 +461,8 @@ function birds_custom_login_css() {
                 margin: 0 auto '.$bcl_logo_bottom_margin.'px;
                 padding: 0;
                 text-decoration: none;
-                max-width: 320px !important;
                 width: '.$logo_width.'px !important;
+                max-width: 320px;
                 text-indent: -9999px;
                 outline: 0;
                 overflow: hidden;

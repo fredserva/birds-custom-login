@@ -84,5 +84,8 @@ Less than or equal to 320px width and 200px height is the recommended logo size 
 
 
 ## Changelog ##
+### 1.0.1 ###
+* Logo CSS fixed
+
 ### 1.0 ###
 * Initial Release
