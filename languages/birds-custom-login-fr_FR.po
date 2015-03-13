@@ -1,0 +1,643 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Birds Portfolio\n"
+"POT-Creation-Date: 2015-02-05 17:45+0100\n"
+"PO-Revision-Date: 2015-02-05 17:45+0100\n"
+"Last-Translator: Frédéric Serva <fred.serva@gmail.com>\n"
+"Language-Team: Frédéric Serva <fred.serva@gmail.com>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/settings/class-settings.php:17
+msgid "Custom Settings"
+msgstr "Paramètres personnalisés"
+
+#: admin/settings/class-settings.php:28 admin/settings/settings.php:53
+msgid "Save Settings"
+msgstr "﻿Enregistrer les paramètres"
+
+#: admin/settings/class-settings.php:29
+msgid "Reset Settings"
+msgstr "﻿Réinitialiser tous les paramètres"
+
+#: admin/settings/class-settings.php:91
+msgid "Default settings have been reset."
+msgstr "Paramètres par défaut rétablis"
+
+#: admin/settings/class-settings.php:164
+msgid "Do you really want to reset all these settings to their default values?"
+msgstr ""
+"Voulez-vous vraiment réinitialiser tous les paramètres à leurs valeurs par "
+"défaut ?"
+
+#: admin/settings/class-settings.php:228 admin/settings/class-settings.php:239
+#: admin/settings/class-settings.php:267
+msgid "No options defined."
+msgstr "﻿Pas d&#39;options définies."
+
+#: admin/settings/class-settings.php:250
+#, php-format
+msgid "Select %s"
+msgstr "Choisissez votre % s"
+
+#: admin/settings/class-settings.php:251
+#, php-format
+msgid "Remove %s"
+msgstr "Supprimez votre %s"
+
+#: admin/settings/class-settings.php:280
+msgid "No action defined."
+msgstr "﻿Aucune action définie."
+
+#: admin/settings/settings.php:11
+msgid "Custom Login Settings"
+msgstr "Paramètres Custom Login"
+
+#: admin/settings/settings.php:14
+msgid "Birds Custom Login"
+msgstr "Birds Custom Login"
+
+#: admin/settings/settings.php:20
+msgid "Logo & Background"
+msgstr "Logo & Arrière-plan"
+
+#: admin/settings/settings.php:25
+msgid "Logo"
+msgstr "Logo"
+
+#: admin/settings/settings.php:26
+msgid "Upload your own logo."
+msgstr "Mettez votre logo en ligne"
+
+#: admin/settings/settings.php:26
+msgid "Max width: 320px"
+msgstr "Largeur maxi : 320px"
+
+#: admin/settings/settings.php:31
+msgid "Logo bottom margin"
+msgstr "Marge inférieure pour le logo"
+
+#: admin/settings/settings.php:32
+msgid ""
+"Default is 25px and it's a good value, but if you want to increase this "
+"margin..."
+msgstr ""
+"La valeur par défaut est de 25px et c'est une bonne valeur, mais si vous "
+"désirez augmenter cette marge..."
+
+#: admin/settings/settings.php:38 admin/settings/settings.php:90
+msgid "Background color"
+msgstr "Couleur d'arrière-plan"
+
+#: admin/settings/settings.php:39
+msgid "Default color is: #f1f1f1"
+msgstr "La couleur par défaut est : #f1f1f1"
+
+#: admin/settings/settings.php:44
+msgid "Background Image"
+msgstr "Image d'arrière-plan"
+
+#: admin/settings/settings.php:45
+msgid "You can upload an background image here."
+msgstr "Vous pouvez mettre en ligne une image d'arrière-plan ici."
+
+#: admin/settings/settings.php:45
+msgid ""
+"The image will stretch to fit the page, and will automatically resize as the "
+"window size changes."
+msgstr ""
+"L'image s'adaptera aux dimensions de la page, et sera redimensionnée "
+"automatiquement si les dimensions de cette page varient."
+
+#: admin/settings/settings.php:45
+msgid ""
+"You'll have the best results by using images with a minimum width of 1024px."
+msgstr ""
+"﻿Vous obtiendrez les meilleurs résultats en utilisant des images dont la "
+"largeur est au-moins 1024px."
+
+#: admin/settings/settings.php:54
+msgid "Reset"
+msgstr "﻿Réinitialiser"
+
+#: admin/settings/settings.php:55
+msgid ""
+"Save the settings and you will be able to preview your Custom Login Page."
+msgstr ""
+"﻿Enregistrez les paramètres et vous serez en mesure de prévisualiser votre "
+"page de login personnalisée."
+
+#: admin/settings/settings.php:56
+msgid "Settings saved!"
+msgstr "﻿Paramètres sauvegardés"
+
+#: admin/settings/settings.php:63
+msgid "Form"
+msgstr "﻿Formulaire"
+
+#: admin/settings/settings.php:67
+msgid "Rounded Form"
+msgstr "﻿Forme arrondie"
+
+#: admin/settings/settings.php:68
+msgid "Would you like to round the form border?"
+msgstr "﻿Souhaitez-vous arrondir les angles du formulaire ?"
+
+#: admin/settings/settings.php:70 admin/settings/settings.php:126
+#: admin/settings/settings.php:136
+msgid "No"
+msgstr "﻿Non"
+
+#: admin/settings/settings.php:71 admin/settings/settings.php:127
+#: admin/settings/settings.php:137
+msgid "Yes"
+msgstr "﻿Oui"
+
+#: admin/settings/settings.php:77
+msgid "Radius"
+msgstr "﻿Rayon"
+
+#: admin/settings/settings.php:78
+msgid "How much would you like to round the border?"
+msgstr "Entrez la valeur du rayon"
+
+#: admin/settings/settings.php:84
+msgid "Label color"
+msgstr "﻿Couleur du label"
+
+#: admin/settings/settings.php:85
+msgid "Default color is: #777777"
+msgstr "La couleur par défaut est : #777777"
+
+#: admin/settings/settings.php:91 admin/settings/settings.php:113
+msgid "Default color is: #ffffff"
+msgstr "La couleur par défaut est : #ffffff"
+
+#: admin/settings/settings.php:96
+msgid "Form Style"
+msgstr "Style du formulaire"
+
+#: admin/settings/settings.php:98
+msgid "Flat"
+msgstr "Flat"
+
+#: admin/settings/settings.php:99
+msgid "Shadowed Box"
+msgstr "Ombré"
+
+#: admin/settings/settings.php:101
+msgid "Choose the style of the form. Default is Shadow"
+msgstr "Choisissez le style du formulaire. La valeur par défaut est Ombré"
+
+#: admin/settings/settings.php:106
+msgid "Button color"
+msgstr "﻿Couleur du bouton"
+
+#: admin/settings/settings.php:107 admin/settings/settings.php:150
+#: admin/settings/settings.php:162
+msgid "Default color is: #2ea2cc"
+msgstr "La couleur par défaut est : #2ea2cc"
+
+#: admin/settings/settings.php:112
+msgid "Button Text color"
+msgstr "﻿Couleur du texte du bouton"
+
+#: admin/settings/settings.php:119
+msgid "Below Form Links"
+msgstr "Liens "
+
+#: admin/settings/settings.php:123
+msgid "\"Register<br>Lost your password?\"<br>links"
+msgstr "Liens \"S'enregistrer<br>Mot de passe oublié ?\""
+
+#: admin/settings/settings.php:124
+msgid "Would you like to remove the \"Register | Lost your password?\" links?"
+msgstr ""
+"Désirez-vous supprimer les liens \"S'enregistrer<br>Mot de passe oublié ?\""
+
+#: admin/settings/settings.php:133
+msgid "\"Back to\" link"
+msgstr "Lien \"Retour sur\""
+
+#: admin/settings/settings.php:134
+msgid "Would you like to remove the \"&larr; Back to\" link?"
+msgstr "Désirez-vous supprimer le lien Lien \"&larr; Retour sur\" ?"
+
+#: admin/settings/settings.php:143
+msgid "\"Register<br>Lost your password?\"<br>links color"
+msgstr "Couleur des liens \"S'enregistrer<br>Mot de passe oublié ?\""
+
+#: admin/settings/settings.php:144 admin/settings/settings.php:156
+msgid "Default color is: #999999"
+msgstr "La couleur par défaut est : #999999"
+
+#: admin/settings/settings.php:149
+msgid "\"Register<br>Lost your password?\"<br>link hover color"
+msgstr "Couleur de survol des liens \"S'enregistrer<br>Mot de passe oublié ?\""
+
+#: admin/settings/settings.php:155
+msgid "\"Back to\"<br>link color"
+msgstr "Couleur du lien \"Retour sur\""
+
+#: admin/settings/settings.php:161
+msgid "\"Back to\"<br>link hover color"
+msgstr "Couleur de survol du lien \"Retour sur\""
+
+#: admin/settings/settings.php:168
+msgid "Preview"
+msgstr "﻿Aperçu"
+
+#: admin/settings/settings.php:172
+msgid "Save the settings to update the preview."
+msgstr "Enregistrez les paramètres pour mettre à jour l'aperçu."
+
+#: admin/settings/settings.php:172
+msgid ""
+"If you've choosen a fullscreen image background, scroll down to make it "
+"appear..."
+msgstr ""
+"Si vous avez choisi une image d'arrière-plan, merci de faire défiler l'écran "
+"pour la faire apparaître..."
+
+#, fuzzy
+#~ msgid "Error !"
+#~ msgstr "Une erreur est survenue lors de l'ajout du produit à la wishlist"
+
+#, fuzzy
+#~ msgid "Input example"
+#~ msgstr "Exemple de champ texte"
+
+#, fuzzy
+#~ msgid "Checkbox example"
+#~ msgstr "Exemple de champ texte"
+
+#, fuzzy
+#~ msgid "Textarea example"
+#~ msgstr "Exemple de champ texte"
+
+#, fuzzy
+#~ msgid "My success message !"
+#~ msgstr "Ma Liste d'envies sur %s"
+
+#, fuzzy
+#~ msgid "Colors"
+#~ msgstr "Couleurs"
+
+#, fuzzy
+#~ msgid "Email example"
+#~ msgstr "﻿Test Texte Email"
+
+#, fuzzy
+#~ msgid "URL example"
+#~ msgstr "Exemple de champ texte"
+
+#, fuzzy
+#~ msgid "Number example"
+#~ msgstr "Exemple de champ texte"
+
+#, fuzzy
+#~ msgid "Radio example"
+#~ msgstr "Exemple de champ texte"
+
+#, fuzzy
+#~ msgid "First option"
+#~ msgstr "Option Trois"
+
+#, fuzzy
+#~ msgid "Second option"
+#~ msgstr "Option Trois"
+
+#, fuzzy
+#~ msgid "Third option"
+#~ msgstr "Option Trois"
+
+#, fuzzy
+#~ msgid "Select example"
+#~ msgstr "Exemple de champ texte"
+
+#, fuzzy
+#~ msgid "\"Multi\" example"
+#~ msgstr "Exemple de champ texte"
+
+#, fuzzy
+#~ msgid "Advanced"
+#~ msgstr "Edition avancée - Modifier le code wrapper personnalisé "
+
+#, fuzzy
+#~ msgid "Media Example"
+#~ msgstr "Exemple de champ texte"
+
+#, fuzzy
+#~ msgid "Color Example"
+#~ msgstr "﻿Sélectionnez une couleur"
+
+#, fuzzy
+#~ msgid "Action Example"
+#~ msgstr "Exemple de champ texte"
+
+#, fuzzy
+#~ msgid "Custom"
+#~ msgstr "Paramètres Custom Login"
+
+#, fuzzy
+#~ msgid "DEFAULT"
+#~ msgstr "Par défaut"
+
+#, fuzzy
+#~ msgid "Top Level Menu"
+#~ msgstr "Emplacement du menu"
+
+#, fuzzy
+#~ msgid "Standard"
+#~ msgstr "﻿Champs standards"
+
+#, fuzzy
+#~ msgid "My section description."
+#~ msgstr "﻿Ceci est une description de titre"
+
+#, fuzzy
+#~ msgid "My Submit"
+#~ msgstr "Ma Liste d'envies sur %s"
+
+#, fuzzy
+#~ msgid "My page description."
+#~ msgstr "﻿Ceci est une description de titre"
+
+#~ msgid "Enter project title here"
+#~ msgstr "Saisissez le nom du projet ici"
+
+#~ msgid "Featured Image"
+#~ msgstr "Image à la Une"
+
+#~ msgid "Project Title"
+#~ msgstr "Nom du projet"
+
+#~ msgid "Categories"
+#~ msgstr "Catégories"
+
+#~ msgid "Project updated. <a href=\"%s\">View Project</a>"
+#~ msgstr "Projet mis à jour.  <a href=\"%s\">Voir le document</a>"
+
+#~ msgid "Custom field updated."
+#~ msgstr "﻿Champ personnalisé mis à jour."
+
+#~ msgid "Custom field deleted."
+#~ msgstr "﻿Champ personnalisé supprimé."
+
+#~ msgid "Project updated."
+#~ msgstr "Projet mis à jour."
+
+#~ msgid "Project restored to revision from %s"
+#~ msgstr "Document restauré depuis la révision de %s"
+
+#~ msgid "Project published. <a href=\"%s\">View It</a>"
+#~ msgstr "Projet publié.  <a href=\"%s\">Voir le document</a>"
+
+#~ msgid "Project saved."
+#~ msgstr "Projet enregistré."
+
+#~ msgid ""
+#~ "Project submitted. <a target=\"_blank\" href=\"%s\">Preview Project</a>"
+#~ msgstr ""
+#~ "Projet soumis. <a target=\"_blank\" href=\"%s\">Prévisualiser le "
+#~ "document</a>"
+
+#~ msgid ""
+#~ "Project scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
+#~ "\"%2$s\">Preview Project</a>"
+#~ msgstr ""
+#~ "Document planifié pour:  <strong>%1$s</strong>. <a target=\"_blank\" href="
+#~ "\"%2$s\">Prévisualiser le document</a>"
+
+#~ msgid "M j, Y @ G:i"
+#~ msgstr "j M Y @ G:i"
+
+#~ msgid ""
+#~ "Project draft updated. <a target=\"_blank\" href=\"%s\">Preview Project</"
+#~ "a>"
+#~ msgstr ""
+#~ "Brouillon mis à jour. <a target=\"_blank\" href=\"%s\">Prévisualiser le "
+#~ "document</a>"
+
+#~ msgid "Project Informations"
+#~ msgstr "Informations relatives au projet"
+
+#~ msgid "A short description of the project."
+#~ msgstr "Brève description du projet."
+
+#~ msgid "Client Name"
+#~ msgstr "﻿Nom du client"
+
+#~ msgid "Enter the name of your Client."
+#~ msgstr "Saisissez le nom de votre client."
+
+#~ msgid "Company Name"
+#~ msgstr "﻿Nom de l'entreprise"
+
+#~ msgid "Testimonial"
+#~ msgstr "Témoignage"
+
+#~ msgid ""
+#~ "Enter a testimonial from your Client to be displayed on the single "
+#~ "Project page"
+#~ msgstr ""
+#~ "Ajoutez un témoignage de votre Client. Il sera affiché sur la page du "
+#~ "projet"
+
+#~ msgid "Project Link"
+#~ msgstr "Lien"
+
+#~ msgid "Enter an URL to link this Portfolio Project to your Client Website."
+#~ msgstr "﻿Saisissez une URL menant vers le site internet de votre client."
+
+#~ msgid "Country"
+#~ msgstr "﻿Pays"
+
+#~ msgid "Enter the country where this project has been realised."
+#~ msgstr "﻿Saisissez le pays du client pour lequel ce projet a été réalisé."
+
+#~ msgid "Project Manager"
+#~ msgstr "﻿Chef de projet"
+
+#~ msgid "Enter the name of the Project Manager."
+#~ msgstr "﻿Entrez le nom du gestionnaire de projet."
+
+#~ msgid "Project Gallery"
+#~ msgstr "Galerie d'images"
+
+#~ msgid "Upload the images related to this project."
+#~ msgstr "Mettez en ligne les images liées à ce projet."
+
+#~ msgid "The Featured Image won't appear in the slider"
+#~ msgstr "L'image à la Une n'apparaîtra pas dans le slider"
+
+#~ msgid "You can drag and drop the images to reorder them."
+#~ msgstr ""
+#~ "﻿Vous pouvez glisser et déposer les images pour en réorganiser l'ordre."
+
+#~ msgid "Add Images"
+#~ msgstr "﻿Ajouter des images"
+
+#~ msgid "Video Embedded Code"
+#~ msgstr "Code d'intégration (embedded) de la vidéo"
+
+#~ msgid "Insert a video into your project page."
+#~ msgstr "Intégrez une vidéo dans la page de votre projet."
+
+#~ msgid "The video will appear before the Image Gallery in the slideshow."
+#~ msgstr "La vidéo apparaîtra avant les images dans le slider."
+
+#~ msgid "No project in this category"
+#~ msgstr "﻿Aucun projet dans cette catégorie"
+
+#~ msgid "All"
+#~ msgstr "Tous"
+
+#~ msgid "Client"
+#~ msgstr "﻿Client"
+
+#~ msgid "Category"
+#~ msgstr "﻿Catégorie"
+
+#~ msgid "Visite Website:"
+#~ msgstr "﻿Visitez le site internet :"
+
+#~ msgid "Related Work"
+#~ msgstr "Projets similaires"
+
+#~ msgid "Upload or Choose the Image Files to include to the Project"
+#~ msgstr ""
+#~ "Mettez en ligne ou choisissez les fichiers d'image à incorporer au projet"
+
+#~ msgid "Add to Gallery"
+#~ msgstr "﻿Ajouter à la galerie"
+
+#~ msgid "Portfolio"
+#~ msgstr "Portfolio"
+
+#~ msgctxt "Post Type General Name"
+#~ msgid "Projects"
+#~ msgstr "Projets"
+
+#~ msgctxt "Post Type Singular Name"
+#~ msgid "Project"
+#~ msgstr "Projet"
+
+#~ msgid "Parent Project:"
+#~ msgstr "Pprojet parent:"
+
+#~ msgid "All Projects"
+#~ msgstr "﻿Tous les projets"
+
+#~ msgid "View Project"
+#~ msgstr "﻿Voir le projet"
+
+#~ msgid "Add New Project"
+#~ msgstr "Ajouter un nouveau projet"
+
+#~ msgid "Add New"
+#~ msgstr "Ajouter"
+
+#~ msgid "Edit Project"
+#~ msgstr "﻿Modifier le projet"
+
+#~ msgid "Update Project"
+#~ msgstr "﻿Mettre à jour le projet"
+
+#~ msgid "Search Project"
+#~ msgstr "Chercher dans les projets"
+
+#~ msgid "No Project found"
+#~ msgstr "Aucun projet trouvé"
+
+#~ msgid "No Project found in Trash"
+#~ msgstr "﻿Aucun projet trouvé dans la corbeille"
+
+#~ msgid "projects"
+#~ msgstr "projets"
+
+#~ msgid "Portfolio projects"
+#~ msgstr "Projets du Portfolio"
+
+#~ msgctxt "Taxonomy General Name"
+#~ msgid "Projects Categories"
+#~ msgstr "﻿Catégories de projets"
+
+#~ msgctxt "Taxonomy Singular Name"
+#~ msgid "Project Category"
+#~ msgstr "﻿Catégorie de projet"
+
+#~ msgid "Projects Categories"
+#~ msgstr "﻿Catégories de projets"
+
+#~ msgid "All Categories"
+#~ msgstr "﻿Toutes les catégories"
+
+#~ msgid "Parent Category"
+#~ msgstr "﻿Catégorie parente"
+
+#~ msgid "Parent Category:"
+#~ msgstr "﻿Catégorie parente:"
+
+#~ msgid "New Category"
+#~ msgstr "﻿Nouvelle catégorie"
+
+#~ msgid "Add New Category"
+#~ msgstr "﻿Ajouter une nouvelle catégorie"
+
+#~ msgid "Edit Category"
+#~ msgstr "﻿Éditer la catégorie"
+
+#~ msgid "Update Category"
+#~ msgstr "﻿Mettre à jour la catégorie"
+
+#~ msgid "Separate Categories with commas"
+#~ msgstr "﻿Séparer les catégories par des virgules"
+
+#~ msgid "Search Categories"
+#~ msgstr "Chercher dans les catégories"
+
+#~ msgid "Add or remove Categories"
+#~ msgstr "﻿Ajouter ou supprimer des catégories"
+
+#~ msgid "Choose from the most used Categories"
+#~ msgstr "﻿Choisissez parmi les catégories les plus utilisées"
+
+#~ msgid "Not Found"
+#~ msgstr "﻿Non trouvé"
+
+#~ msgid "project"
+#~ msgstr "projet"
+
+#~ msgid "work"
+#~ msgstr "travaux"
+
+#~ msgid "Sorry, no portfolio entries found"
+#~ msgstr "Désolé, aucun élément de portfolio n'a été trouvé"
+
+#~ msgid "Portfolio - 2 Columns"
+#~ msgstr "Portfolio - 2 Columns"
+
+#~ msgid "Portfolio - 3 Columns"
+#~ msgstr "Portfolio - 3 Columns"
+
+#~ msgid "Portfolio - 4 Columns"
+#~ msgstr "Portfolio - 4 Columns"
+
+#~ msgctxt "Taxonomy General Name"
+#~ msgid "Categories"
+#~ msgstr "Catégories"
+
+#~ msgctxt "Taxonomy Singular Name"
+#~ msgid "Category"
+#~ msgstr "﻿Catégorie"
