@@ -8,9 +8,9 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 
 Requires at least: 4.0
 
-Tested up to: 4.1
+Tested up to: 4.2
 
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 
 License: GNU General Public License v2.0
 
@@ -77,15 +77,20 @@ Less than or equal to 320px width and 200px height is the recommended logo size 
 == Screenshots ==
 
 1. Settings are under the Appearance menu.
-2. Custom Login Settings - Tab 1
-3. Custom Login Settings - Tab 2
-4. Custom Login Settings - Tab 3
-5. Custom Login Settings - Tab 4
-6. Demo Login Page #1
-7. Demo Login Page #2
-8. Demo Login Page #3
+2. Custom Login Settings - Tab 1 - Logo & Background
+3. Custom Login Settings - Tab 2 - Form
+4. Custom Login Settings - Tab 3 - Below Form Links
+5. Custom Login Settings - Tab 4 - Message Boxes
+6. Custom Login Settings - Tab 5 - Preview
+7. Demo Login Page #1
+8. Demo Login Page #2
+9. Demo Login Page #3
 
 == Changelog ==
+
+= 1.0.4 =
+
+* Message boxes vertical line colors
 
 = 1.0.3 =
 

@@ -393,6 +393,9 @@ function birds_custom_login_css() {
     $bcl_back_color = get_setting_bcl( 'bcl_below_form_section', 'bcl_back_color' );
     $bcl_back_hover_color = get_setting_bcl( 'bcl_below_form_section', 'bcl_back_hover_color' );
 
+    $bcl_error_color = get_setting_bcl( 'bcl_login_messages_section', 'bcl_error_color' );
+    $bcl_message_color = get_setting_bcl( 'bcl_login_messages_section', 'bcl_message_color' );
+
     // Fullscreen Background
     $bcl_fullscreen_bg = get_setting_bcl('bcl_elements_section', 'bcl_fullscreen_bg');
     if ($bcl_fullscreen_bg != '') {
@@ -426,6 +429,12 @@ function birds_custom_login_css() {
         <style type="text/css">
          body {
                 background: '.$bcl_bg_color.' !important;
+            }
+            #login_error{
+                border-left:4px solid '.$bcl_error_color.' !important;
+            }
+            .login .message{
+                border-left:4px solid '.$bcl_message_color.' !important;
             }
             .login form {
                 margin-top: 20px;

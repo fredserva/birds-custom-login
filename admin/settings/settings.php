@@ -172,6 +172,23 @@ $birds_custom_login_top_page->apply_settings( array(
             ),
         )
     ),
+    'bcl_login_messages_section' => array(
+        'title'  => __( 'Message boxes', $text_domain ),
+        'fields' => array(
+            'bcl_error_color'  => array(
+                'type'  => 'color',
+                'label'   => __( 'Error box<br>Vertical line color', $text_domain ),
+                'description' => __( 'Default color is: #dd3d36', $text_domain ),
+                'default' => '#dd3d36'
+            ),
+            'bcl_message_color'  => array(
+                'type'  => 'color',
+                'label'   => __( 'Message box<br>Vertical line color', $text_domain ),
+                'description' => __( 'Default color is: #2ea2cc', $text_domain ),
+                'default' => '#2ea2cc'
+            ),
+        )
+    ),
     'bcl_preview_section'    => array(
         'title'  => __( 'Preview', $text_domain ),
         'fields' => array(
