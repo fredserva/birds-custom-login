@@ -45,6 +45,7 @@ This plugin is Localization/Internationalization ready and follows WordPress i18
 * Button Colors (Background & Text)
 * Hide/Show "Register - Lost your password?" links
 * Hide/Show "Back to" link
+* Message boxes left border color
 * "Register - Lost your password?" & "Back to" links colors (+ hover)
 * Live preview within the settings screen
 
