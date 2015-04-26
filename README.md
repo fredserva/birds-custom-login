@@ -45,7 +45,7 @@ This plugin is Localization/Internationalization ready and follows WordPress i18
 * Live preview within the settings screen
 
 ### Bundled translations ###
-* Fr
+* French
 
 
 ## Installation ##
@@ -74,7 +74,7 @@ Less than or equal to 320px width and 200px height is the recommended logo size 
 
 ## Screenshots ##
 
-1. . Settings are under the Appearance menu.
+1. Settings are under the Appearance menu.
 2. Custom Login Settings - Tab 1 - Logo & Background
 3. Custom Login Settings - Tab 2 - Form
 4. Custom Login Settings - Tab 3 - Below Form Links
