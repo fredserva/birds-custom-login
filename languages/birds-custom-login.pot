@@ -1,9 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Birds Custom Login\n"
-"POT-Creation-Date: 2015-05-14 15:06-0000\n"
-"PO-Revision-Date: 2015-05-14 15:06-0000\n"
-"Last-Translator: Pedro Mendonça <ped.gaspar@gmail.com>\n"
+"POT-Creation-Date: 2015-05-14 15:25-0000\n"
+"PO-Revision-Date: 2015-05-14 15:26-0000\n"
 "Language-Team: Frédéric Serva <fred.serva@gmail.com>\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
@@ -260,4 +259,32 @@ msgstr ""
 
 #: admin/settings/settings.php:197
 msgid "If you've choosen a fullscreen image background, scroll down to make it appear..."
+msgstr ""
+
+#: admin/settings/settings.php:207
+msgid "Username"
+msgstr ""
+
+#: admin/settings/settings.php:212
+msgid "Password"
+msgstr ""
+
+#: admin/settings/settings.php:218
+msgid "Remember Me"
+msgstr ""
+
+#: admin/settings/settings.php:222
+msgid "Log In"
+msgstr ""
+
+#: admin/settings/settings.php:227
+msgid "Register"
+msgstr ""
+
+#: admin/settings/settings.php:227
+msgid "Lost your password?"
+msgstr ""
+
+#: admin/settings/settings.php:229
+msgid "Back to"
 msgstr ""
