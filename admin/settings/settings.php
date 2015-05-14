@@ -50,7 +50,7 @@ $birds_custom_login_top_page = create_settings_page(
                     'bcl_fullscreen_bg'  => array(
                         'type'  => 'media',
                         'label' => __( 'Background Image', $text_domain ),
-                        'description' => __('You can upload an background image here.', $text_domain).'<br>'.__('The image will stretch to fit the page, and will automatically resize as the window size changes.', $text_domain).'<br><br>'.__('You\'ll have the best results by using images with a minimum width of 1024px.', $text_domain),
+                        'description' => __('You can upload a background image here.', $text_domain).'<br>'.__('The image will stretch to fit the page, and will automatically resize as the window size changes.', $text_domain).'<br><br>'.__('You\'ll have the best results by using images with a minimum width of 1024px.', $text_domain),
                         'default' => ''
                     ),
                 )
