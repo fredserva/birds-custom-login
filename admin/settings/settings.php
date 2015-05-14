@@ -204,29 +204,29 @@ $birds_custom_login_top_page->apply_settings( array(
 
                             <div name="loginform" id="pre_loginform" action="#" method="post">
                                 <p>
-                                    <label for="pre_user_login">Username<br />
+                                    <label for="pre_user_login">'.__('Username', $text_domain ).'<br />
                                         <input type="text" name="log" id="pre_user_login" class="pre_input" value="" size="20" />
                                     </label>
                                 </p>
                                 <p>
-                                    <label for="pre_user_pass">Password<br />
+                                    <label for="pre_user_pass">'.__('Password', $text_domain ).'<br />
                                         <input type="password" name="pwd" id="pre_user_pass" class="pre_input" value="" size="20" />
                                     </label>
                                 </p>
                                 <p class="pre_forgetmenot">
                                     <label for="pre_rememberme">
-                                        <input name="rememberme" type="checkbox" id="pre_rememberme" value="forever"  /> Remember Me
+                                        <input name="rememberme" type="checkbox" id="pre_rememberme" value="forever"  /> '.__('Remember Me', $text_domain ).'
                                         </label>
                                 </p>
                                 <p class="pre_submit">
-                                    <input type="submit" name="wp-submit" id="pre_wp-submit" class="button button-primary button-large" value="Log In" />
+                                    <input type="submit" name="wp-submit" id="pre_wp-submit" class="button button-primary button-large" value="'.__('Log In', $text_domain ).'" />
                                 </p>
                             </div>
 
                             <p id="pre_nav">
-                                <a class="pre_reg" href="#">Register</a> | <a class="pre_pass" href="#" title="Password Lost and Found">Lost your password?</a>
+                                <a class="pre_reg" href="#">'.__('Register', $text_domain).'</a> | <a class="pre_pass" href="#" title="Password Lost and Found">'.__('Lost your password?', $text_domain ).'</a>
                             </p>
-                            <p id="pre_backtoblog"><a href="#" title="Are you lost?">&larr; Back to '.$blog_name.'</a></p>
+                            <p id="pre_backtoblog"><a href="#" title="Are you lost?">&larr; '.__('Back to', $text_domain ).' '.$blog_name.'</a></p>
                         </div>
                     </div>
 
