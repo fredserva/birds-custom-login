@@ -20,8 +20,8 @@ if ( !function_exists('birds_custom_url_login')) {
 /**
 * HEX to RGBA
 */
-if ( !function_exists('hex2rgba')) {
-    function hex2rgba($color, $opacity = false) {
+if ( !function_exists('birds_hex2rgba')) {
+    function birds_hex2rgba($color, $opacity = false) {
 
         $default = 'rgb(0,0,0)';
         //Return default if no color provided
@@ -57,12 +57,12 @@ if ( !function_exists('hex2rgba')) {
 /**
 * Darken/Lighten HEX
 */
-if ( !function_exists('colourCreator')) {
-    function colourCreator($colour, $per)
+if ( !function_exists('birds_color_creator')) {
+    function birds_color_creator($color, $per)
     {
-        $colour = substr( $colour, 1 ); // Removes first character of hex string (#)
+        $color = substr( $color, 1 ); // Removes first character of hex string (#)
         $rgb = ''; // Empty variable
-        $per = $per/100*255; // Creates a percentage to work with. Change the middle figure to control colour temperature
+        $per = $per/100*255; // Creates a percentage to work with. Change the middle figure to control color temperature
 
         if  ($per < 0 ) // Check to see if the percentage is a negative number
         {
@@ -70,7 +70,7 @@ if ( !function_exists('colourCreator')) {
             $per =  abs($per); // Turns Neg Number to Pos Number
             for ($x=0;$x<3;$x++)
             {
-                $c = hexdec(substr($colour,(2*$x),2)) - $per;
+                $c = hexdec(substr($color,(2*$x),2)) - $per;
                 $c = ($c < 0) ? 0 : dechex($c);
                 $rgb .= (strlen($c) < 2) ? '0'.$c : $c;
             }
@@ -80,7 +80,7 @@ if ( !function_exists('colourCreator')) {
             // LIGHTER
             for ($x=0;$x<3;$x++)
             {
-                $c = hexdec(substr($colour,(2*$x),2)) + $per;
+                $c = hexdec(substr($color,(2*$x),2)) + $per;
                 $c = ($c > 255) ? 'ff' : dechex($c);
                 $rgb .= (strlen($c) < 2) ? '0'.$c : $c;
             }
@@ -121,12 +121,12 @@ function birds_apply_preview_css() {
         $bcl_form_style_shadow = '0 1px 3px rgba(0,0,0,.13)';
     }
     $bcl_form_button_color = get_setting_bcl( 'bcl_form_section', 'bcl_form_button_color' );
-    $rgba_06 = hex2rgba($bcl_form_button_color, 0.6);
+    $rgba_06 = birds_hex2rgba($bcl_form_button_color, 0.6);
     $darkPercent = -13;
     $lightPercent = 90;
-    $darker = colourCreator($bcl_form_button_color, $darkPercent);
-    $lighter = colourCreator($bcl_form_button_color, $lightPercent);
-    $rgba_015 = hex2rgba($lighter, 0.15);
+    $darker = birds_color_creator($bcl_form_button_color, $darkPercent);
+    $lighter = birds_color_creator($bcl_form_button_color, $lightPercent);
+    $rgba_015 = birds_hex2rgba($lighter, 0.15);
     $bcl_rounded_form = get_setting_bcl( 'bcl_form_section', 'bcl_rounded_form' );
     $bcl_rounded_nb = get_setting_bcl( 'bcl_form_section', 'bcl_rounded_nb' );
     if ($bcl_rounded_form == 'yes') {
@@ -357,12 +357,12 @@ function birds_custom_login_css() {
         $bcl_form_style_shadow = '0 1px 3px rgba(0,0,0,.13)';
     }
     $bcl_form_button_color = get_setting_bcl( 'bcl_form_section', 'bcl_form_button_color' );
-    $rgba_06 = hex2rgba($bcl_form_button_color, 0.6);
+    $rgba_06 = birds_hex2rgba($bcl_form_button_color, 0.6);
     $darkPercent = -13;
     $lightPercent = 90;
-    $darker = colourCreator($bcl_form_button_color, $darkPercent);
-    $lighter = colourCreator($bcl_form_button_color, $lightPercent);
-    $rgba_015 = hex2rgba($lighter, 0.15);
+    $darker = birds_color_creator($bcl_form_button_color, $darkPercent);
+    $lighter = birds_color_creator($bcl_form_button_color, $lightPercent);
+    $rgba_015 = birds_hex2rgba($lighter, 0.15);
     $bcl_rounded_form = get_setting_bcl( 'bcl_form_section', 'bcl_rounded_form' );
     $bcl_rounded_nb = get_setting_bcl( 'bcl_form_section', 'bcl_rounded_nb' );
     if ($bcl_rounded_form == 'yes') {

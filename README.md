@@ -10,7 +10,7 @@
 
 **Tested up to**: 4.2
 
-**Stable tag**: 1.0.4
+**Stable tag**: 1.0.5
 
 **License**: GNU General Public License v2.0
 
@@ -46,6 +46,7 @@ This plugin is Localization/Internationalization ready and follows WordPress i18
 
 ### Bundled translations ###
 * French
+* Portuguese (pt_PT) (Thanks to <a href="https://github.com/pedro-mendonca" target="_blank">Pedro Mendonça</a>)
 
 
 ## Installation ##
@@ -85,6 +86,13 @@ Less than or equal to 320px width and 200px height is the recommended logo size 
 9. Demo Login Page #3
 
 ## Changelog ##
+
+### 1.0.5 ###
+* Add .pot catalog
+* Add portuguese (pt_PT) translation
+* Grammar correction in english string
+* Add translation (textdomain) to Form Preview in settings
+* Bug fixed in apply css
 
 ### 1.0.4 ###
 * Message boxes vertical line colors
