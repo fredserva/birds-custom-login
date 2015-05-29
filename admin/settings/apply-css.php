@@ -157,6 +157,13 @@ function birds_apply_preview_css() {
     $bcl_back_color = get_setting_bcl( 'bcl_below_form_section', 'bcl_back_color' );
     $bcl_back_hover_color = get_setting_bcl( 'bcl_below_form_section', 'bcl_back_hover_color' );
 
+    // Custom CSS
+    $bcl_custom_css = get_setting_bcl( 'bcl_custom_css_section', 'bcl_custom_css' );
+    $bcl_custom_css_sanitized = esc_textarea($bcl_custom_css);
+    if ($bcl_custom_css != '') {
+        echo '<style>' . $bcl_custom_css_sanitized . '</style>';
+    }
+
     // Fullscreen Background
     $bcl_fullscreen_bg = get_setting_bcl('bcl_elements_section', 'bcl_fullscreen_bg');
     if ($bcl_fullscreen_bg != '') {
@@ -395,6 +402,13 @@ function birds_custom_login_css() {
 
     $bcl_error_color = get_setting_bcl( 'bcl_login_messages_section', 'bcl_error_color' );
     $bcl_message_color = get_setting_bcl( 'bcl_login_messages_section', 'bcl_message_color' );
+
+    // Custom CSS
+    $bcl_custom_css = get_setting_bcl( 'bcl_custom_css_section', 'bcl_custom_css' );
+    $bcl_custom_css_sanitized = esc_textarea($bcl_custom_css);
+    if ($bcl_custom_css != '') {
+        echo '<style>' . $bcl_custom_css_sanitized . '</style>';
+    }
 
     // Fullscreen Background
     $bcl_fullscreen_bg = get_setting_bcl('bcl_elements_section', 'bcl_fullscreen_bg');

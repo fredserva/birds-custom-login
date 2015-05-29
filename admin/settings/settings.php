@@ -189,6 +189,17 @@ $birds_custom_login_top_page->apply_settings( array(
             ),
         )
     ),
+    'bcl_custom_css_section' => array(
+        'title'  => __( 'Custom CSS', $text_domain ),
+        'fields' => array(
+            'bcl_custom_css'  => array(
+                'type'  => 'textarea',
+                'label'   => __( 'Custom CSS', $text_domain ),
+                'description' => __( 'If you want to add some extra CSS to your login page, you can do it here', $text_domain ).'<br>'.__( 'e.g.: If you want to move the login box 50px to the right, then you can type:', $text_domain ).'<span style="color:#2ea2cc;"> '.__( '#login {padding: 8% 0 0 50px;}', $text_domain ).'</span><br><br><strong>'.__( 'No preview for this Custom CSS', $text_domain ).'</strong>',
+                'attributes' => array( 'style' => 'max-width: 50%;' ),
+            ),
+        )
+    ),
     'bcl_preview_section'    => array(
         'title'  => __( 'Preview', $text_domain ),
         'fields' => array(

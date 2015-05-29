@@ -10,7 +10,7 @@
 
 **Tested up to**: 4.2.2
 
-**Stable tag**: 1.0.5
+**Stable tag**: 1.0.6
 
 **License**: GNU General Public License v2.0
 
@@ -47,7 +47,7 @@ This plugin is Localization/Internationalization ready and follows WordPress i18
 ### Bundled translations ###
 * French
 * Portuguese (pt_PT) (Thanks to <a href="https://github.com/pedro-mendonca" target="_blank">Pedro Mendonça</a>)
-
+* Swedish (Thanks to <a href="http://www.wpdailythemes.com/" target="_blank">Peter Nilsson</a>)
 
 ## Installation ##
 
@@ -86,6 +86,11 @@ Less than or equal to 320px width and 200px height is the recommended logo size 
 9. Demo Login Page #3
 
 ## Changelog ##
+
+### 1.0.6 ###
+* Add swedish translation
+* Add Custom CSS textarea
+* .pot catalog updated
 
 ### 1.0.5 ###
 * Add .pot catalog
