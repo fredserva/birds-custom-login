@@ -1,0 +1,311 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Birds Custom Login\n"
+"POT-Creation-Date: 2015-05-30 14:42+0100\n"
+"PO-Revision-Date: 2015-05-30 14:44+0100\n"
+"Last-Translator: Peter Nilsson <wpdailythemes@gmail.com>\n"
+"Language-Team: Peter Nilsson\n"
+"Language: sv_SE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/settings/class-settings.php:25
+msgid "Custom Settings"
+msgstr "Anpassade Inställningar"
+
+#: admin/settings/class-settings.php:36 admin/settings/settings.php:61
+msgid "Save Settings"
+msgstr "Spara Inställningar"
+
+#: admin/settings/class-settings.php:37
+msgid "Reset Settings"
+msgstr "Återställ Inställningar:"
+
+#: admin/settings/class-settings.php:99
+msgid "Default settings have been reset."
+msgstr "Standardinställningarna har återställts."
+
+#: admin/settings/class-settings.php:172
+msgid "Do you really want to reset all these settings to their default values?"
+msgstr ""
+"Vill du verkligen vill återställa alla dessa inställningar till "
+"standardvärden?"
+
+#: admin/settings/class-settings.php:236 admin/settings/class-settings.php:247
+#: admin/settings/class-settings.php:275
+msgid "No options defined."
+msgstr "Inga alternativ är definierade."
+
+#: admin/settings/class-settings.php:258
+#, php-format
+msgid "Select %s"
+msgstr "Välj %s"
+
+#: admin/settings/class-settings.php:259
+#, php-format
+msgid "Remove %s"
+msgstr "Ta bort %s"
+
+#: admin/settings/class-settings.php:288
+msgid "No action defined."
+msgstr "Ingen åtgärd definierad."
+
+#: admin/settings/settings.php:19
+msgid "Custom Login Settings"
+msgstr "Anpassade Inloggningsinställningar"
+
+#: admin/settings/settings.php:22
+msgid "Birds Custom Login"
+msgstr "Birds Anpassade Inloggningsinställningar"
+
+#: admin/settings/settings.php:28
+msgid "Logo & Background"
+msgstr "Logo & Bakgrund"
+
+#: admin/settings/settings.php:33
+msgid "Logo"
+msgstr "Logo"
+
+#: admin/settings/settings.php:34
+msgid "Upload your own logo."
+msgstr "Ladda upp er egen logo."
+
+#: admin/settings/settings.php:34
+msgid "Max width: 320px"
+msgstr "Max bredd: 320px"
+
+#: admin/settings/settings.php:39
+msgid "Logo bottom margin"
+msgstr "Logo undre marginal"
+
+#: admin/settings/settings.php:40
+msgid ""
+"Default is 25px and it's a good value, but if you want to increase this "
+"margin..."
+msgstr ""
+"Standard är 25px och det är ett bra värde, men om du vill öka denna "
+"marginal ..."
+
+#: admin/settings/settings.php:46 admin/settings/settings.php:98
+msgid "Background color"
+msgstr "Bakgrundsfärg"
+
+#: admin/settings/settings.php:47
+msgid "Default color is: #f1f1f1"
+msgstr "Standardfärgen är: #f1f1f1"
+
+#: admin/settings/settings.php:52
+msgid "Background Image"
+msgstr "Bakgrundsbild"
+
+#: admin/settings/settings.php:53
+msgid "You can upload a background image here."
+msgstr "Ni kan ladda upp er bakgrundsbild här."
+
+#: admin/settings/settings.php:53
+msgid ""
+"The image will stretch to fit the page, and will automatically resize as the "
+"window size changes."
+msgstr ""
+"Bilden kommer att sträckas för att passa sidan, och kommer automatiskt att "
+"ändra storlek allteftersom fönstrets storlek ändras."
+
+#: admin/settings/settings.php:53
+msgid ""
+"You'll have the best results by using images with a minimum width of 1024px."
+msgstr ""
+"Du får bäst resultat genom att använda bilder med en minimum bredd på 1024px."
+
+#: admin/settings/settings.php:62
+msgid "Reset"
+msgstr "Återställ"
+
+#: admin/settings/settings.php:63
+msgid ""
+"Save the settings and you will be able to preview your Custom Login Page."
+msgstr ""
+"Spara inställningarna och du kommer att kunna förhandsgranska din anpassade "
+"inloggningssida."
+
+#: admin/settings/settings.php:64
+msgid "Settings saved!"
+msgstr "Inställningar sparade!"
+
+#: admin/settings/settings.php:71
+msgid "Form"
+msgstr "Formulär"
+
+#: admin/settings/settings.php:75
+msgid "Rounded Form"
+msgstr "Rundad form"
+
+#: admin/settings/settings.php:76
+msgid "Would you like to round the form border?"
+msgstr "Vill du runda formulärets kant?"
+
+#: admin/settings/settings.php:78 admin/settings/settings.php:134
+#: admin/settings/settings.php:144
+msgid "No"
+msgstr "Nej"
+
+#: admin/settings/settings.php:79 admin/settings/settings.php:135
+#: admin/settings/settings.php:145
+msgid "Yes"
+msgstr "Ja"
+
+#: admin/settings/settings.php:85
+msgid "Radius"
+msgstr "Radie"
+
+#: admin/settings/settings.php:86
+msgid "How much would you like to round the border?"
+msgstr "Hur mycket skulle du vilja runda kanten?"
+
+#: admin/settings/settings.php:92
+msgid "Label color"
+msgstr "Etikettfärg"
+
+#: admin/settings/settings.php:93
+msgid "Default color is: #777777"
+msgstr "Standardfärgen är: # 777.777"
+
+#: admin/settings/settings.php:99 admin/settings/settings.php:121
+msgid "Default color is: #ffffff"
+msgstr "Standardfärgen är: #ffffff"
+
+#: admin/settings/settings.php:104
+msgid "Form Style"
+msgstr "Stil på formulär"
+
+#: admin/settings/settings.php:106
+msgid "Flat"
+msgstr "Platt vy"
+
+#: admin/settings/settings.php:107
+msgid "Shadowed Box"
+msgstr "Skuggad Box"
+
+#: admin/settings/settings.php:109
+msgid "Choose the style of the form. Default is Shadow"
+msgstr "Välj stil på formuläret. Standard är Shadow"
+
+#: admin/settings/settings.php:114
+msgid "Button color"
+msgstr "Färg på knapp"
+
+#: admin/settings/settings.php:115 admin/settings/settings.php:158
+#: admin/settings/settings.php:170 admin/settings/settings.php:187
+msgid "Default color is: #2ea2cc"
+msgstr "Standardfärgen är: #2ea2cc"
+
+#: admin/settings/settings.php:120
+msgid "Button Text color"
+msgstr "Textfärg på knapp"
+
+#: admin/settings/settings.php:127
+msgid "Below Form Links"
+msgstr "Under Formuläret Länkar"
+
+#: admin/settings/settings.php:131
+msgid "\"Register<br>Lost your password?\"<br>links"
+msgstr "\"Registrera <br> Glömt ditt lösenord? \"<br> länkar"
+
+#: admin/settings/settings.php:132
+msgid "Would you like to remove the \"Register | Lost your password?\" links?"
+msgstr "Vill du ta bort \"Registrera | Glömt lösenord?\" länkar?"
+
+#: admin/settings/settings.php:141
+msgid "\"Back to\" link"
+msgstr "\"Tillbaka till\" länk"
+
+#: admin/settings/settings.php:142
+msgid "Would you like to remove the \"&larr; Back to\" link?"
+msgstr "Vill du ta bort \"&larr; Tillbaka till\" länk?"
+
+#: admin/settings/settings.php:151
+msgid "\"Register<br>Lost your password?\"<br>links color"
+msgstr "\"Registrera<br>Glömt ditt lösenord?\"<br>länkar"
+
+#: admin/settings/settings.php:152 admin/settings/settings.php:164
+msgid "Default color is: #999999"
+msgstr "Standardfärgen är: #999999"
+
+#: admin/settings/settings.php:157
+msgid "\"Register<br>Lost your password?\"<br>link hover color"
+msgstr "\"Registrera <br> Glömt ditt lösenord?\"<br> länk hover färg"
+
+#: admin/settings/settings.php:163
+msgid "\"Back to\"<br>link color"
+msgstr "\"Tillbaka till\" <br> länk färg"
+
+#: admin/settings/settings.php:169
+msgid "\"Back to\"<br>link hover color"
+msgstr "\"Tillbaka till\" <br> länk hover färg"
+
+#: admin/settings/settings.php:176
+msgid "Message boxes"
+msgstr "Meddelanderutor"
+
+#: admin/settings/settings.php:180
+msgid "Error box<br>Vertical line color"
+msgstr "Felmeddelande ruta <br> Vertikal linjefärg"
+
+#: admin/settings/settings.php:181
+msgid "Default color is: #dd3d36"
+msgstr "Standardfärgen är: #dd3d36"
+
+#: admin/settings/settings.php:186
+msgid "Message box<br>Vertical line color"
+msgstr "Meddelanderuta <br> Vertikal linjefärg"
+
+#: admin/settings/settings.php:193
+msgid "Preview"
+msgstr "Förhandsgranska"
+
+#: admin/settings/settings.php:197
+msgid "Save the settings to update the preview."
+msgstr "Spara inställningar för att uppdatera förhandsgranskningen."
+
+#: admin/settings/settings.php:197
+msgid ""
+"If you've choosen a fullscreen image background, scroll down to make it "
+"appear..."
+msgstr ""
+"Om du har valt en fullscreen bildbakgrund, scrolla ner för att visa den..."
+
+#: admin/settings/settings.php:207
+msgid "Username"
+msgstr "Användarnamn"
+
+#: admin/settings/settings.php:212
+msgid "Password"
+msgstr "Lösenord"
+
+#: admin/settings/settings.php:218
+msgid "Remember Me"
+msgstr "Kom ihåg mig"
+
+#: admin/settings/settings.php:222
+msgid "Log In"
+msgstr "Logga in"
+
+#: admin/settings/settings.php:227
+msgid "Register"
+msgstr "Registrera"
+
+#: admin/settings/settings.php:227
+msgid "Lost your password?"
+msgstr "Glömt ert lösenord?"
+
+#: admin/settings/settings.php:229
+msgid "Back to"
+msgstr "Tillbaka till"
