@@ -8,9 +8,9 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 
 Requires at least: 4.0
 
-Tested up to: 4.2.2
+Tested up to: 4.3
 
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 
 License: GNU General Public License v2.0
 
@@ -50,6 +50,26 @@ This plugin is Localization/Internationalization ready and follows WordPress i18
 * Message boxes left border color
 * "Register - Lost your password?" & "Back to" links colors (+ hover)
 * Live preview within the settings screen
+
+<blockquote>
+Upgrade to the Premium Version to take advantage of new and more advanced features...
+
+
+Although the free version is full-featured and can be used without any limits, the premium version provides more features:
+<ul>
+<li>Colors transparency</li>
+<li>Links to external images</li>
+<li>Fullscren background image or not. And controls over its position</li>
+<li>Instant preview (for Custom CSS too)</li>
+<li>Settings Import / Export</li>
+<li>Support via dedicated forum</li>
+</ul>
+</p>
+And don't worry about your free version settings...
+You'll be able to retrieve them with a migration tool included in the premium version.
+
+Click on the following link to find outmore about the <a href="http://www.tenbirdsflying.com/theme/birds-custom-login-premium/" target="_blank">Premium Version</a>
+</blockquote>
 
 **Contribute**
 
@@ -91,17 +111,20 @@ Less than or equal to 320px width and 200px height is the recommended logo size 
 
 == Changelog ==
 
+= 1.0.7 =
+* Minor bug fixed
+
 = 1.0.6 =
-* Add swedish translation
-* Add Custom CSS textarea
+* Added swedish translation
+* Added Custom CSS textarea
 * .pot catalog updated
 
 = 1.0.5 =
 
-* Add .pot catalog
-* Add portuguese (pt_PT) translation
+* Added .pot catalog
+* Added portuguese (pt_PT) translation
 * Grammar correction in english string
-* Add translation (textdomain) to Form Preview in settings
+* Added translation (textdomain) to Form Preview in settings
 * Bug fixed in apply css
 
 = 1.0.4 =

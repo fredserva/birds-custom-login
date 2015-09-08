@@ -28,6 +28,9 @@ form.wrap .birds-settings-tabs h3.active {
 }
 form.wrap .birds-settings-tabs h3:last-child {
     border-right: 1px solid #ddd;
+    margin-left: 10px;
+    color: #fff;
+    background-color: #6f7888;
 }
 .birds-settings-tab {
     padding-top: 0.5em;
@@ -55,4 +58,7 @@ tr.hide-label th {
 }
 tr.hide-label td {
     padding-left: 0;
+}
+.molly.postbox {
+    max-width: 80%;
 }

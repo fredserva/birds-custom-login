@@ -8,9 +8,9 @@
 
 **Requires at least**: 4.0
 
-**Tested up to**: 4.2.2
+**Tested up to**: 4.3
 
-**Stable tag**: 1.0.6
+**Stable tag**: 1.0.7
 
 **License**: GNU General Public License v2.0
 
@@ -67,12 +67,6 @@ Yes, just click the 'Reset' button.
 Less than or equal to 320px width and 200px height is the recommended logo size for your WordPress Login Page.
 
 
-## Future improvements ##
-
-* Import/Export Settings
-* Whatever you'll ask me (if I'm smart enough to do it...)
-
-
 ## Screenshots ##
 
 1. Settings are under the Appearance menu.
@@ -87,14 +81,17 @@ Less than or equal to 320px width and 200px height is the recommended logo size 
 
 ## Changelog ##
 
+### 1.0.7 ###
+* Minor bug fixed
+
 ### 1.0.6 ###
-* Add swedish translation
-* Add Custom CSS textarea
+* Added swedish translation
+* Added Custom CSS textarea
 * .pot catalog updated
 
 ### 1.0.5 ###
-* Add .pot catalog
-* Add portuguese (pt_PT) translation
+* Added .pot catalog
+* Added portuguese (pt_PT) translation
 * Grammar correction in english string
 * Add translation (textdomain) to Form Preview in settings
 * Bug fixed in apply css

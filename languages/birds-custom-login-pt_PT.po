@@ -1,18 +1,20 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Birds Custom Login\n"
-"POT-Creation-Date: 2015-05-28 12:24+0100\n"
-"PO-Revision-Date: 2015-05-30 01:36-0000\n"
+"POT-Creation-Date: 2015-09-08 12:10+0200\n"
+"PO-Revision-Date: 2015-09-08 12:10+0200\n"
 "Last-Translator: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language-Team: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.6\n"
+"X-Generator: Poedit 1.8.4\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
@@ -34,7 +36,8 @@ msgstr "As definições padrão foram repostas."
 
 #: admin/settings/class-settings.php:172
 msgid "Do you really want to reset all these settings to their default values?"
-msgstr "Tem a certeza que pretende repor todas as definições para os valores padrão?"
+msgstr ""
+"Tem a certeza que pretende repor todas as definições para os valores padrão?"
 
 #: admin/settings/class-settings.php:236 admin/settings/class-settings.php:247
 #: admin/settings/class-settings.php:275
@@ -84,8 +87,11 @@ msgid "Logo bottom margin"
 msgstr "Margem inferior do logótipo"
 
 #: admin/settings/settings.php:40
-msgid "Default is 25px and it's a good value, but if you want to increase this margin..."
-msgstr "O padrão é 25px e é um bom valor, mas se quiser aumentar esta margem..."
+msgid ""
+"Default is 25px and it's a good value, but if you want to increase this "
+"margin..."
+msgstr ""
+"O padrão é 25px e é um bom valor, mas se quiser aumentar esta margem..."
 
 #: admin/settings/settings.php:46 admin/settings/settings.php:98
 msgid "Background color"
@@ -104,20 +110,29 @@ msgid "You can upload a background image here."
 msgstr "Pode carregar aqui uma imagem de fundo."
 
 #: admin/settings/settings.php:53
-msgid "The image will stretch to fit the page, and will automatically resize as the window size changes."
-msgstr "A imagem será esticada para se ajustar à página, será autimaticamente redimensionada à medida que o tamanho da janela for alterado."
+msgid ""
+"The image will stretch to fit the page, and will automatically resize as the "
+"window size changes."
+msgstr ""
+"A imagem será esticada para se ajustar à página, será autimaticamente "
+"redimensionada à medida que o tamanho da janela for alterado."
 
 #: admin/settings/settings.php:53
-msgid "You'll have the best results by using images with a minimum width of 1024px."
-msgstr "Terá melhores resultados utilizando imagens com uma largura mínima de 1024px."
+msgid ""
+"You'll have the best results by using images with a minimum width of 1024px."
+msgstr ""
+"Terá melhores resultados utilizando imagens com uma largura mínima de 1024px."
 
 #: admin/settings/settings.php:62
 msgid "Reset"
 msgstr "Repor"
 
 #: admin/settings/settings.php:63
-msgid "Save the settings and you will be able to preview your Custom Login Page."
-msgstr "Guarde as definições e poderá pré-visualizar a sua página de início de sessão personalizada."
+msgid ""
+"Save the settings and you will be able to preview your Custom Login Page."
+msgstr ""
+"Guarde as definições e poderá pré-visualizar a sua página de início de "
+"sessão personalizada."
 
 #: admin/settings/settings.php:64
 msgid "Settings saved!"
@@ -255,12 +270,18 @@ msgid "Custom CSS"
 msgstr "CSS personalizado"
 
 #: admin/settings/settings.php:198
-msgid "If you want to add some extra CSS to your login page, you can do it here"
-msgstr "Se quiser adicionar algum CSS extra à sua página de início de sessão, pode fazê-lo aqui"
+msgid ""
+"If you want to add some extra CSS to your login page, you can do it here"
+msgstr ""
+"Se quiser adicionar algum CSS extra à sua página de início de sessão, pode "
+"fazê-lo aqui"
 
 #: admin/settings/settings.php:198
-msgid "e.g.: If you want to move the login box 50px to the right, then you can type:"
-msgstr "p. ex.: se quiser mover a caixa de início de sessão 50px para a direita, poderá escrever:"
+msgid ""
+"e.g.: If you want to move the login box 50px to the right, then you can type:"
+msgstr ""
+"p. ex.: se quiser mover a caixa de início de sessão 50px para a direita, "
+"poderá escrever:"
 
 #: admin/settings/settings.php:198
 msgid "#login {padding: 8% 0 0 50px;}"
@@ -279,8 +300,12 @@ msgid "Save the settings to update the preview."
 msgstr "Guarde as definições para actualizar a pré-visualização."
 
 #: admin/settings/settings.php:208
-msgid "If you've choosen a fullscreen image background, scroll down to make it appear..."
-msgstr "Se escolheu uma imagem de fundo em ecrã completo, deslize para baixo para a fazer aparecer..."
+msgid ""
+"If you've choosen a fullscreen image background, scroll down to make it "
+"appear..."
+msgstr ""
+"Se escolheu uma imagem de fundo em ecrã completo, deslize para baixo para a "
+"fazer aparecer..."
 
 #: admin/settings/settings.php:218
 msgid "Username"
@@ -309,3 +334,66 @@ msgstr "Esqueceu-se da senha?"
 #: admin/settings/settings.php:240
 msgid "Back to"
 msgstr "Voltar a"
+
+#: admin/settings/settings.php:249
+msgid "Premium Version"
+msgstr ""
+
+#: admin/settings/settings.php:253
+msgid "Go Premium"
+msgstr ""
+
+#: admin/settings/settings.php:258
+msgid ""
+"Upgrade to the Premium Version to take advantage of new and more advanced "
+"features..."
+msgstr ""
+
+#: admin/settings/settings.php:260
+msgid ""
+"Although the free version is full-featured and can be used without any "
+"limits, the premium version provides more features:"
+msgstr ""
+
+#: admin/settings/settings.php:262
+msgid "Colors transparency"
+msgstr ""
+
+#: admin/settings/settings.php:263
+msgid "Links to external images"
+msgstr ""
+
+#: admin/settings/settings.php:264
+msgid "Fullscren background image or not. And controls over its position."
+msgstr ""
+
+#: admin/settings/settings.php:265
+msgid "Instant preview (for Custom CSS too)"
+msgstr ""
+
+#: admin/settings/settings.php:266
+msgid "Settings Import / Export"
+msgstr ""
+
+#: admin/settings/settings.php:267
+msgid "Support via dedicated forum"
+msgstr ""
+
+#: admin/settings/settings.php:270
+msgid "And don't worry about your free version settings..."
+msgstr ""
+
+#: admin/settings/settings.php:270
+msgid ""
+"You'll be able to retrieve them with a migration tool included in the "
+"premium version."
+msgstr ""
+
+#: admin/settings/settings.php:272
+#, php-format
+msgid ""
+"A one year license is included with each purchase. This license entitles you "
+"to free updates and priority support. You'll have the option to renew your "
+"license at a 50% discount within 60 days of it's expiration or are free to "
+"continue using the current Premium version at the time the license expires."
+msgstr ""

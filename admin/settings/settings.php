@@ -245,4 +245,37 @@ $birds_custom_login_top_page->apply_settings( array(
             )
         )
     ),
+    'bcl_notice_section'    => array(
+        'title'  => __( 'Premium Version', $text_domain ),
+        'fields' => array(
+            'bcl_notice' => array(
+                'type'    => 'preview',
+                'label'   => __( 'Go Premium', $text_domain ),
+                'description' => '
+
+                    <div class="molly postbox">
+                        <div class="inside">
+                        <p>'.__( 'Upgrade to the Premium Version to take advantage of new and more advanced features...', $text_domain ).'</p>
+                        <p>&nbsp;</p>
+                        <p>'.__( 'Although the free version is full-featured and can be used without any limits, the premium version provides more features:', $text_domain ).'
+                        <ul>
+                            <li style="padding-left:20px;">&bullet; '.__( 'Colors transparency', $text_domain ).'</li>
+                            <li style="padding-left:20px;">&bullet; '.__( 'Links to external images', $text_domain ).'</li>
+                            <li style="padding-left:20px;">&bullet; '.__( 'Fullscren background image or not. And controls over its position.', $text_domain ).'</li>
+                            <li style="padding-left:20px;">&bullet; '.__( 'Instant preview (for Custom CSS too)', $text_domain ).'</li>
+                            <li style="padding-left:20px;">&bullet; '.__( 'Settings Import / Export', $text_domain ).'</li>
+                            <li style="padding-left:20px;">&bullet; '.__( 'Support via dedicated forum', $text_domain ).'</li>
+                        </ul>
+                        </p>
+                        <p>'.__( 'And don\'t worry about your free version settings...', $text_domain ).'<br>'.__( 'You\'ll be able to retrieve them with a migration tool included in the premium version.', $text_domain ).'</p>
+                        <p>&nbsp;</p>
+                        <p>'.__( 'A one year license is included with each purchase. This license entitles you to free updates and priority support. You\'ll have the option to renew your license at a 50% discount within 60 days of it\'s expiration or are free to continue using the current Premium version at the time the license expires.', $text_domain ).'</p>
+                        <p>&nbsp;</p>
+                        <p><a href="http://www.tenbirdsflying.com/theme/birds-custom-login-premium/" class="button-primary" target="_blank">Go Premium Now!</a></p>
+                        </div>
+                    </div>
+                ', // End Premium Version
+            )
+        )
+    ),
 ) );

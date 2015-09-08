@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Birds Portfolio\n"
-"POT-Creation-Date: 2015-05-28 12:22+0100\n"
-"PO-Revision-Date: 2015-05-28 12:24+0100\n"
+"POT-Creation-Date: 2015-09-08 12:10+0200\n"
+"PO-Revision-Date: 2015-09-08 12:17+0200\n"
 "Last-Translator: Frédéric Serva <fred.serva@gmail.com>\n"
 "Language-Team: Frédéric Serva <fred.serva@gmail.com>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8\n"
+"X-Generator: Poedit 1.8.4\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -338,6 +338,109 @@ msgstr "Mot de passe oublié ?"
 #: admin/settings/settings.php:240
 msgid "Back to"
 msgstr "Retour sur"
+
+#: admin/settings/settings.php:249
+msgid "Premium Version"
+msgstr "Version Premium"
+
+#: admin/settings/settings.php:253
+msgid "Go Premium"
+msgstr "Go Premium"
+
+#: admin/settings/settings.php:258
+msgid ""
+"Upgrade to the Premium Version to take advantage of new and more advanced "
+"features..."
+msgstr ""
+"Passez à la version Premium pour profiter de fonctionnalités nouvelles et "
+"plus avancées…"
+
+#: admin/settings/settings.php:260
+msgid ""
+"Although the free version is full-featured and can be used without any "
+"limits, the premium version provides more features:"
+msgstr ""
+"Bien que la version gratuite soit complète et puisse être utilisée sans "
+"aucune limite, la version premium fournit plus de fonctionnalités :"
+
+#: admin/settings/settings.php:262
+msgid "Colors transparency"
+msgstr "Transparence des couleurs"
+
+#: admin/settings/settings.php:263
+msgid "Links to external images"
+msgstr "Liens vers des images externes"
+
+#: admin/settings/settings.php:264
+msgid "Fullscren background image or not. And controls over its position."
+msgstr "Image d’arrière-plan plein écran ou non. Et contrôles sur sa position."
+
+#: admin/settings/settings.php:265
+msgid "Instant preview (for Custom CSS too)"
+msgstr "Aperçu immédiat (y compris pour le CSS personnalisé)"
+
+#: admin/settings/settings.php:266
+msgid "Settings Import / Export"
+msgstr "Importation / exportation des paramètres"
+
+#: admin/settings/settings.php:267
+msgid "Support via dedicated forum"
+msgstr "Assistance via un forum dédié"
+
+#: admin/settings/settings.php:270
+msgid "And don't worry about your free version settings..."
+msgstr ""
+"Et ne vous inquiétez pas à quant à vos paramètres de la version gratuite…"
+
+#: admin/settings/settings.php:270
+msgid ""
+"You'll be able to retrieve them with a migration tool included in the "
+"premium version."
+msgstr ""
+"Vous serez en mesure de les récupérer grâce à l’outil de migration inclus "
+"dans la version premium."
+
+#: admin/settings/settings.php:272
+#, php-format
+msgid ""
+"A one year license is included with each purchase. This license entitles you "
+"to free updates and priority support. You'll have the option to renew your "
+"license at a 50% discount within 60 days of it's expiration or are free to "
+"continue using the current Premium version at the time the license expires."
+msgstr ""
+"Une licence d’un an est incluse avec chaque achat. Cette licence vous donne "
+"droit aux mises à jour gratuites ainsi qu’à une assistance prioritaire. Vous "
+"aurez la possibilité de renouveler votre licence avec une réduction de 50% "
+"jusqu’à 60 jours après son expiration ou vous pourrez continuer à utiliser "
+"la version Premium mais sans mise à jour et assistance."
+
+#~ msgid ""
+#~ "ee A one year license is included with each purchase. This license "
+#~ "entitles you to free updates and priority support. You'll have the option "
+#~ "to renew your license at a 50% discount within 60 days of it's expiration "
+#~ "or are free to continue using the current Premium version at the time the "
+#~ "license expires."
+#~ msgstr ""
+#~ "Une licence d’un an est incluse avec chaque achat. Cette licence vous "
+#~ "donne droit aux mises à jour gratuites ainsi qu’à une assistance "
+#~ "prioritaire. Vous aurez la possibilité de renouveler votre licence avec "
+#~ "une réduction de 50% jusqu’à 60 jours après son expiration ou vous "
+#~ "pourrez continuer à utiliser la version Premium mais sans mise à jour et "
+#~ "assistance."
+
+#~ msgid ""
+#~ "A one year license is included with each purchase. This license entitles "
+#~ "you to free updates and priority support. You will have the option to "
+#~ "renew your license at a 50% discount within 60 days of it's expiration or "
+#~ "are free to continue using the current Premium version at the time the "
+#~ "license expires."
+#~ msgstr ""
+#~ "Une licence d’un an est incluse avec chaque achat. Cette licence vous "
+#~ "donne droit aux mises à jour gratuites ainsi qu’à une assistance "
+#~ "prioritaire. Vous aurez la possibilité de renouveler votre licence avec "
+#~ "une réduction de 50% jusqu’à 60 jours après son expiration ou vous "
+#~ "pourrez continuer à utiliser la version Premium mais sans mise à jour et "
+#~ "assistance."
 
 #~ msgid "You can upload an background image here."
 #~ msgstr "Vous pouvez mettre en ligne une image d'arrière-plan ici."
