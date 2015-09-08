@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Birds Custom Login\n"
-"POT-Creation-Date: 2015-09-08 12:10+0200\n"
-"PO-Revision-Date: 2015-09-08 12:10+0200\n"
+"POT-Creation-Date: 2015-09-08 14:17+0100\n"
+"PO-Revision-Date: 2015-09-08 17:59+0100\n"
 "Last-Translator: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language-Team: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language: pt_PT\n"
@@ -337,57 +337,64 @@ msgstr "Voltar a"
 
 #: admin/settings/settings.php:249
 msgid "Premium Version"
-msgstr ""
+msgstr "Versão Premium"
 
 #: admin/settings/settings.php:253
 msgid "Go Premium"
-msgstr ""
+msgstr "Obter Premium"
 
 #: admin/settings/settings.php:258
 msgid ""
 "Upgrade to the Premium Version to take advantage of new and more advanced "
 "features..."
 msgstr ""
+"Actualize para a Versão Premium para tirar partido dos novos e mais "
+"avançados recursos..."
 
 #: admin/settings/settings.php:260
 msgid ""
 "Although the free version is full-featured and can be used without any "
 "limits, the premium version provides more features:"
 msgstr ""
+"Embora a versão gratuita seja completa e possa ser utilizada sem limitações, "
+"a versão premium fornece mais recursos:"
 
 #: admin/settings/settings.php:262
 msgid "Colors transparency"
-msgstr ""
+msgstr "Transparência de cores"
 
 #: admin/settings/settings.php:263
 msgid "Links to external images"
-msgstr ""
+msgstr "Ligações para imagens externas"
 
 #: admin/settings/settings.php:264
 msgid "Fullscren background image or not. And controls over its position."
 msgstr ""
+"Imagem de fundo em tamanho completo ou não. Controlos sobre a sua posição."
 
 #: admin/settings/settings.php:265
 msgid "Instant preview (for Custom CSS too)"
-msgstr ""
+msgstr "Pré-visualização instantânea (também para CSS personalizado)"
 
 #: admin/settings/settings.php:266
 msgid "Settings Import / Export"
-msgstr ""
+msgstr "Importar / exportar definições"
 
 #: admin/settings/settings.php:267
 msgid "Support via dedicated forum"
-msgstr ""
+msgstr "Suporte via fórum dedicado"
 
 #: admin/settings/settings.php:270
 msgid "And don't worry about your free version settings..."
-msgstr ""
+msgstr "E não se preocupe com as definições da sua versão gratuita..."
 
 #: admin/settings/settings.php:270
 msgid ""
 "You'll be able to retrieve them with a migration tool included in the "
 "premium version."
 msgstr ""
+"Terá a possibilidade de as obter com uma ferramenta de migração incluída na "
+"versão premium."
 
 #: admin/settings/settings.php:272
 #, php-format
@@ -397,3 +404,12 @@ msgid ""
 "license at a 50% discount within 60 days of it's expiration or are free to "
 "continue using the current Premium version at the time the license expires."
 msgstr ""
+"Em cada compra é incluída uma licença de um ano. Esta licença dá-lhe direito "
+"a actualizações gratuitas e suporte prioritário. Terá a opção de renovar a "
+"licença com um desconto de 50% no prazo dos 60 dias antes de expirar ou é "
+"livre de continuar utilizar a versão Premium que tenha no momento em que a "
+"licença expira."
+
+#: admin/settings/settings.php:274
+msgid "Go Premium Now!"
+msgstr "Obter Premium Agora!"
