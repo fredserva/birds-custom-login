@@ -271,7 +271,7 @@ $birds_custom_login_top_page->apply_settings( array(
                         <p>&nbsp;</p>
                         <p>'.__( 'A one year license is included with each purchase. This license entitles you to free updates and priority support. You\'ll have the option to renew your license at a 50% discount within 60 days of it\'s expiration or are free to continue using the current Premium version at the time the license expires.', $text_domain ).'</p>
                         <p>&nbsp;</p>
-                        <p><a href="http://www.tenbirdsflying.com/theme/birds-custom-login-premium/" class="button-primary" target="_blank">Go Premium Now!</a></p>
+                        <p><a href="http://www.tenbirdsflying.com/theme/birds-custom-login-premium/" class="button-primary" target="_blank">'.__( 'Go Premium Now!', $text_domain ).'</a></p>
                         </div>
                     </div>
                 ', // End Premium Version
