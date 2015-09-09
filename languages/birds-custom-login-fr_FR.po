@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Birds Portfolio\n"
-"POT-Creation-Date: 2015-09-08 12:10+0200\n"
-"PO-Revision-Date: 2015-09-08 12:17+0200\n"
+"POT-Creation-Date: 2015-09-09 10:10+0200\n"
+"PO-Revision-Date: 2015-09-09 10:11+0200\n"
 "Last-Translator: Frédéric Serva <fred.serva@gmail.com>\n"
 "Language-Team: Frédéric Serva <fred.serva@gmail.com>\n"
 "Language: fr_FR\n"
@@ -413,6 +413,10 @@ msgstr ""
 "aurez la possibilité de renouveler votre licence avec une réduction de 50% "
 "jusqu’à 60 jours après son expiration ou vous pourrez continuer à utiliser "
 "la version Premium mais sans mise à jour et assistance."
+
+#: admin/settings/settings.php:274
+msgid "Go Premium Now!"
+msgstr "Passez en mode Premium !"
 
 #~ msgid ""
 #~ "ee A one year license is included with each purchase. This license "
