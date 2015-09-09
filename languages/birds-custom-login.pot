@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Birds Custom Login\n"
-"POT-Creation-Date: 2015-09-08 12:10+0200\n"
+"POT-Creation-Date: 2015-09-09 10:08+0200\n"
 "PO-Revision-Date: 2015-05-14 15:26-0000\n"
 "Language-Team: Frédéric Serva <fred.serva@gmail.com>\n"
 "Language: en\n"
@@ -362,4 +362,8 @@ msgstr ""
 #: admin/settings/settings.php:272
 #, php-format
 msgid "A one year license is included with each purchase. This license entitles you to free updates and priority support. You'll have the option to renew your license at a 50% discount within 60 days of it's expiration or are free to continue using the current Premium version at the time the license expires."
+msgstr ""
+
+#: admin/settings/settings.php:274
+msgid "Go Premium Now!"
 msgstr ""
