@@ -6,6 +6,38 @@ jQuery(document).ready(function ($) {
         current = parseInt(sessionStorage.getItem(page + '_current_tab'), 10) || 0;
     $('.birds-settings-section', form).each(function (i, el) {
         var setting = $(el).val(),
+            title = $(el).prev('h2'),
+            section = $('<div>').attr('id', page + '_' + setting);
+        $(el).nextAll().each(function () {
+            var tag = $(this).prop('tagName');
+            if (tag === 'H2' || tag === 'INPUT') { return false; }
+            $(this).appendTo(section);
+        });
+        if (tabs.length && title.length) {
+            section.addClass('birds-settings-tab').hide();
+            title.appendTo(tabs).click(function (e) {
+                e.preventDefault();
+                if (!title.hasClass('active')) {
+                    $('.birds-settings-tab.active', form).fadeOut('fast', function () {
+                        $('.active', form).removeClass('active');
+                        title.addClass('active');
+                        section.fadeIn('fast').addClass('active');
+                    });
+                    sessionStorage.setItem(page + '_current_tab', i);
+                }
+            });
+            if (current === i) {
+                title.addClass('active');
+                section.show().addClass('active');
+            }
+            tabs.after(section);
+        } else {
+            title.prependTo(section);
+            $(el).after(section);
+        }
+    });
+    $('.birds-settings-section-ante', form).each(function (i, el) {
+        var setting = $(el).val(),
             title = $(el).prev('h3'),
             section = $('<div>').attr('id', page + '_' + setting);
         $(el).nextAll().each(function () {

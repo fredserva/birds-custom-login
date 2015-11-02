@@ -157,7 +157,7 @@ if ( ! class_exists( 'Birds_Settings_Bcl' ) ) {
         public function do_page()
         { ?>
 <form action="options.php" method="POST" enctype="multipart/form-data" class="wrap">
-    <h2><?php echo $this->title; ?></h2>
+    <h1><?php echo $this->title; ?></h1>
     <?php
          settings_errors();
          if ( $text = $this->args['description'] ) { echo wpautop( $text ); }
@@ -207,7 +207,13 @@ if ( ! class_exists( 'Birds_Settings_Bcl' ) ) {
         public function do_section( $args )
         {
             extract( $args );
-            echo "<input name='{$id}[{$this->page}_setting]' type='hidden' value='{$id}' class='birds-settings-section' />";
+            global $wp_version;
+            if ($wp_version >= 4.4) {
+                echo "<input name='{$id}[{$this->page}_setting]' type='hidden' value='{$id}' class='birds-settings-section' />";
+            } else {
+                echo "<input name='{$id}[{$this->page}_setting]' type='hidden' value='{$id}' class='birds-settings-section-ante' />";
+            }
+//            echo "<input name='{$id}[{$this->page}_setting]' type='hidden' value='{$id}' class='birds-settings-section' />";
             if ( $text = $this->settings[$id]['description'] ) {
                 echo wpautop( $text );
             }

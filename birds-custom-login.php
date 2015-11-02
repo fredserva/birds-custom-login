@@ -12,7 +12,7 @@
 
  * Plugin URI:          http://www.tenbirdsflying.com/theme/birds-custom-login/
  * Description:         Birds Custom Login allows you to easily customize your admin login page according to your needs.
- * Version:             1.0.7
+ * Version:             1.0.8
  * Author:              Frédéric Serva
  * Author URI:          http://www.tenbirdsflying.com/
  * License:             GPL-2.0+

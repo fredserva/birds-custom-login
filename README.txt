@@ -8,9 +8,9 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 
 Requires at least: 4.0
 
-Tested up to: 4.3
+Tested up to: 4.4
 
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 
 License: GNU General Public License v2.0
 
@@ -110,6 +110,10 @@ Less than or equal to 320px width and 200px height is the recommended logo size 
 9. Demo Login Page #3
 
 == Changelog ==
+
+= 1.0.8 =
+* WP 4.4 Compatibility
+* Added Custom Tooltip Text for logo
 
 = 1.0.7 =
 * Minor bug fixed

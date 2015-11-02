@@ -34,6 +34,12 @@ $birds_custom_login_top_page = create_settings_page(
                         'description' => __('Upload your own logo.', $text_domain).'<br>'.__('Max width: 320px', $text_domain),
                         'default' => $logo
                     ),
+                    'bcl_logo_alt_text' => array(
+                        'type'  => 'text',
+                        'label' => __( 'Logo Alt text', $text_domain ),
+                        'description' => __('', $text_domain),
+                        'default' => 'Powered by WordPress'
+                    ),
                     'bcl_logo_bottom_margin' => array(
                         'type'  => 'number',
                         'label' => __( 'Logo bottom margin', $text_domain ),
@@ -197,6 +203,7 @@ $birds_custom_login_top_page->apply_settings( array(
                 'label'   => __( 'Custom CSS', $text_domain ),
                 'description' => __( 'If you want to add some extra CSS to your login page, you can do it here', $text_domain ).'<br>'.__( 'e.g.: If you want to move the login box 50px to the right, then you can type:', $text_domain ).'<span style="color:#2ea2cc;"> '.__( '#login {padding: 8% 0 0 50px;}', $text_domain ).'</span><br><br><strong>'.__( 'No preview for this Custom CSS', $text_domain ).'</strong>',
                 'attributes' => array( 'style' => 'max-width: 50%;' ),
+                'default' => ''
             ),
         )
     ),
@@ -211,7 +218,7 @@ $birds_custom_login_top_page->apply_settings( array(
                     <div class="background-cover"></div>
                     <div id="pre_bg">
                         <div class="pre_login">
-                            <h1><a href="#" title="Powered by WordPress" tabindex="-1">...</a></h1>
+                            <h1><a href="#" tabindex="-1">...</a></h1>
 
                             <div name="loginform" id="pre_loginform" action="#" method="post">
                                 <p>
