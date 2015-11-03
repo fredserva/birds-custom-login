@@ -352,7 +352,7 @@ function birds_custom_login_css() {
     }
     $bcl_logo_alt_text = get_setting_bcl( 'bcl_elements_section', 'bcl_logo_alt_text' );
     if ( empty($bcl_logo_alt_text) ) {
-        $bcl_logo_alt_text = 'Powered by WordPress';
+        $bcl_logo_alt_text = __('Powered by WordPress', 'birds-custom-login');
     }
     $bcl_logo_bottom_margin = get_setting_bcl( 'bcl_elements_section', 'bcl_logo_bottom_margin' );
     $bcl_bg_color = get_setting_bcl( 'bcl_elements_section', 'bcl_bg_color' );

@@ -37,8 +37,13 @@ $birds_custom_login_top_page = create_settings_page(
                     'bcl_logo_alt_text' => array(
                         'type'  => 'text',
                         'label' => __( 'Logo Alt text', $text_domain ),
+<<<<<<< HEAD
                         'description' => __( 'Default is "Powered by WordPress"', $text_domain ),
                         'default' => __( 'Powered by WordPress', $text_domain )
+=======
+                        'description' => __('Default is "Powered by WordPress"', $text_domain),
+                        'default' => __('Powered by WordPress', $text_domain)
+>>>>>>> master
                     ),
                     'bcl_logo_bottom_margin' => array(
                         'type'  => 'number',
