@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Birds Custom Login\n"
-"POT-Creation-Date: 2015-09-08 14:17+0100\n"
-"PO-Revision-Date: 2015-09-08 17:59+0100\n"
+"POT-Creation-Date: 2015-11-03 16:32+0100\n"
+"PO-Revision-Date: 2015-11-03 16:32+0100\n"
 "Last-Translator: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language-Team: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language: pt_PT\n"
@@ -18,11 +18,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
+#: admin/settings/apply-css.php:355 admin/settings/settings.php:41
+msgid "Powered by WordPress"
+msgstr ""
+
 #: admin/settings/class-settings.php:25
 msgid "Custom Settings"
 msgstr "Definições personalizadas"
 
-#: admin/settings/class-settings.php:36 admin/settings/settings.php:61
+#: admin/settings/class-settings.php:36 admin/settings/settings.php:67
 msgid "Save Settings"
 msgstr "Guardar definições"
 
@@ -39,22 +43,22 @@ msgid "Do you really want to reset all these settings to their default values?"
 msgstr ""
 "Tem a certeza que pretende repor todas as definições para os valores padrão?"
 
-#: admin/settings/class-settings.php:236 admin/settings/class-settings.php:247
-#: admin/settings/class-settings.php:275
+#: admin/settings/class-settings.php:242 admin/settings/class-settings.php:253
+#: admin/settings/class-settings.php:281
 msgid "No options defined."
 msgstr "Nenhuma opção definida."
 
-#: admin/settings/class-settings.php:258
+#: admin/settings/class-settings.php:264
 #, php-format
 msgid "Select %s"
 msgstr "Seleccionar %s"
 
-#: admin/settings/class-settings.php:259
+#: admin/settings/class-settings.php:265
 #, php-format
 msgid "Remove %s"
 msgstr "Remover %s"
 
-#: admin/settings/class-settings.php:288
+#: admin/settings/class-settings.php:294
 msgid "No action defined."
 msgstr "Nenhuma ação definida."
 
@@ -83,33 +87,41 @@ msgid "Max width: 320px"
 msgstr "Largura máxima: 320px"
 
 #: admin/settings/settings.php:39
+msgid "Logo Alt text"
+msgstr ""
+
+#: admin/settings/settings.php:40
+msgid "Default is \"Powered by WordPress\""
+msgstr ""
+
+#: admin/settings/settings.php:45
 msgid "Logo bottom margin"
 msgstr "Margem inferior do logótipo"
 
-#: admin/settings/settings.php:40
+#: admin/settings/settings.php:46
 msgid ""
 "Default is 25px and it's a good value, but if you want to increase this "
 "margin..."
 msgstr ""
 "O padrão é 25px e é um bom valor, mas se quiser aumentar esta margem..."
 
-#: admin/settings/settings.php:46 admin/settings/settings.php:98
+#: admin/settings/settings.php:52 admin/settings/settings.php:104
 msgid "Background color"
 msgstr "Cor de fundo"
 
-#: admin/settings/settings.php:47
+#: admin/settings/settings.php:53
 msgid "Default color is: #f1f1f1"
 msgstr "Cor padrão é: #f1f1f1"
 
-#: admin/settings/settings.php:52
+#: admin/settings/settings.php:58
 msgid "Background Image"
 msgstr "Imagem de fundo"
 
-#: admin/settings/settings.php:53
+#: admin/settings/settings.php:59
 msgid "You can upload a background image here."
 msgstr "Pode carregar aqui uma imagem de fundo."
 
-#: admin/settings/settings.php:53
+#: admin/settings/settings.php:59
 msgid ""
 "The image will stretch to fit the page, and will automatically resize as the "
 "window size changes."
@@ -117,189 +129,189 @@ msgstr ""
 "A imagem será esticada para se ajustar à página, será autimaticamente "
 "redimensionada à medida que o tamanho da janela for alterado."
 
-#: admin/settings/settings.php:53
+#: admin/settings/settings.php:59
 msgid ""
 "You'll have the best results by using images with a minimum width of 1024px."
 msgstr ""
 "Terá melhores resultados utilizando imagens com uma largura mínima de 1024px."
 
-#: admin/settings/settings.php:62
+#: admin/settings/settings.php:68
 msgid "Reset"
 msgstr "Repor"
 
-#: admin/settings/settings.php:63
+#: admin/settings/settings.php:69
 msgid ""
 "Save the settings and you will be able to preview your Custom Login Page."
 msgstr ""
 "Guarde as definições e poderá pré-visualizar a sua página de início de "
 "sessão personalizada."
 
-#: admin/settings/settings.php:64
+#: admin/settings/settings.php:70
 msgid "Settings saved!"
 msgstr "Definições guardadas!"
 
-#: admin/settings/settings.php:71
+#: admin/settings/settings.php:77
 msgid "Form"
 msgstr "Formulário"
 
-#: admin/settings/settings.php:75
+#: admin/settings/settings.php:81
 msgid "Rounded Form"
 msgstr "Formulário arredondado"
 
-#: admin/settings/settings.php:76
+#: admin/settings/settings.php:82
 msgid "Would you like to round the form border?"
 msgstr "Gostaria de arredondar a borda do formulário?"
 
-#: admin/settings/settings.php:78 admin/settings/settings.php:134
-#: admin/settings/settings.php:144
+#: admin/settings/settings.php:84 admin/settings/settings.php:140
+#: admin/settings/settings.php:150
 msgid "No"
 msgstr "Não"
 
-#: admin/settings/settings.php:79 admin/settings/settings.php:135
-#: admin/settings/settings.php:145
+#: admin/settings/settings.php:85 admin/settings/settings.php:141
+#: admin/settings/settings.php:151
 msgid "Yes"
 msgstr "Sim"
 
-#: admin/settings/settings.php:85
+#: admin/settings/settings.php:91
 msgid "Radius"
 msgstr "Raio"
 
-#: admin/settings/settings.php:86
+#: admin/settings/settings.php:92
 msgid "How much would you like to round the border?"
 msgstr "Qual a dimensão do arredondamento?"
 
-#: admin/settings/settings.php:92
+#: admin/settings/settings.php:98
 msgid "Label color"
 msgstr "Cor da legenda"
 
-#: admin/settings/settings.php:93
+#: admin/settings/settings.php:99
 msgid "Default color is: #777777"
 msgstr "Cor padrão é: #777777"
 
-#: admin/settings/settings.php:99 admin/settings/settings.php:121
+#: admin/settings/settings.php:105 admin/settings/settings.php:127
 msgid "Default color is: #ffffff"
 msgstr "Cor padrão é: #ffffff"
 
-#: admin/settings/settings.php:104
+#: admin/settings/settings.php:110
 msgid "Form Style"
 msgstr "Estilo de formulário"
 
-#: admin/settings/settings.php:106
+#: admin/settings/settings.php:112
 msgid "Flat"
 msgstr "Plano"
 
-#: admin/settings/settings.php:107
+#: admin/settings/settings.php:113
 msgid "Shadowed Box"
 msgstr "Caixa sombreada"
 
-#: admin/settings/settings.php:109
+#: admin/settings/settings.php:115
 msgid "Choose the style of the form. Default is Shadow"
 msgstr "Escolha o estilo do formulário. O padrão é sombreado."
 
-#: admin/settings/settings.php:114
+#: admin/settings/settings.php:120
 msgid "Button color"
 msgstr "Cor do botão"
 
-#: admin/settings/settings.php:115 admin/settings/settings.php:158
-#: admin/settings/settings.php:170 admin/settings/settings.php:187
+#: admin/settings/settings.php:121 admin/settings/settings.php:164
+#: admin/settings/settings.php:176 admin/settings/settings.php:193
 msgid "Default color is: #2ea2cc"
 msgstr "Cor padrão é: #2ea2cc"
 
-#: admin/settings/settings.php:120
+#: admin/settings/settings.php:126
 msgid "Button Text color"
 msgstr "Cor do texto do botão"
 
-#: admin/settings/settings.php:127
+#: admin/settings/settings.php:133
 msgid "Below Form Links"
 msgstr "Ligacões abaixo do formulário"
 
-#: admin/settings/settings.php:131
+#: admin/settings/settings.php:137
 msgid "\"Register<br>Lost your password?\"<br>links"
 msgstr "Ligações<br>\"Registar<br>Esqueceu-se da senha?\""
 
-#: admin/settings/settings.php:132
+#: admin/settings/settings.php:138
 msgid "Would you like to remove the \"Register | Lost your password?\" links?"
 msgstr "Quer remover as ligações \"Registar | Esqueceu-se da senha?\"?"
 
-#: admin/settings/settings.php:141
+#: admin/settings/settings.php:147
 msgid "\"Back to\" link"
 msgstr "Ligação \"Voltar a\""
 
-#: admin/settings/settings.php:142
+#: admin/settings/settings.php:148
 msgid "Would you like to remove the \"&larr; Back to\" link?"
 msgstr "Quer remover a ligação \"&larr; Voltar a\"?"
 
-#: admin/settings/settings.php:151
+#: admin/settings/settings.php:157
 msgid "\"Register<br>Lost your password?\"<br>links color"
 msgstr "Cor das ligações<br>\"Registar<br>Esqueceu-se da senha?\""
 
-#: admin/settings/settings.php:152 admin/settings/settings.php:164
+#: admin/settings/settings.php:158 admin/settings/settings.php:170
 msgid "Default color is: #999999"
 msgstr "Cor padrão é: #999999"
 
-#: admin/settings/settings.php:157
+#: admin/settings/settings.php:163
 msgid "\"Register<br>Lost your password?\"<br>link hover color"
 msgstr "Cor ao passar pelas ligações<br>\"Registar<br>Esqueceu-se da senha?\""
 
-#: admin/settings/settings.php:163
+#: admin/settings/settings.php:169
 msgid "\"Back to\"<br>link color"
 msgstr "Cor da ligação \"Voltar a\""
 
-#: admin/settings/settings.php:169
+#: admin/settings/settings.php:175
 msgid "\"Back to\"<br>link hover color"
 msgstr "Cor ao passar pela ligação \"Voltar a\""
 
-#: admin/settings/settings.php:176
+#: admin/settings/settings.php:182
 msgid "Message boxes"
 msgstr "Caixas de mensagem"
 
-#: admin/settings/settings.php:180
+#: admin/settings/settings.php:186
 msgid "Error box<br>Vertical line color"
 msgstr "Caixa de erro<br>Cor da linha vertical"
 
-#: admin/settings/settings.php:181
+#: admin/settings/settings.php:187
 msgid "Default color is: #dd3d36"
 msgstr "Cor padrão é: #dd3d36"
 
-#: admin/settings/settings.php:186
+#: admin/settings/settings.php:192
 msgid "Message box<br>Vertical line color"
 msgstr "Caixa de mensagem<br>Cor da linha vertical"
 
-#: admin/settings/settings.php:193 admin/settings/settings.php:197
+#: admin/settings/settings.php:199 admin/settings/settings.php:203
 msgid "Custom CSS"
 msgstr "CSS personalizado"
 
-#: admin/settings/settings.php:198
+#: admin/settings/settings.php:204
 msgid ""
 "If you want to add some extra CSS to your login page, you can do it here"
 msgstr ""
 "Se quiser adicionar algum CSS extra à sua página de início de sessão, pode "
 "fazê-lo aqui"
 
-#: admin/settings/settings.php:198
+#: admin/settings/settings.php:204
 msgid ""
 "e.g.: If you want to move the login box 50px to the right, then you can type:"
 msgstr ""
 "p. ex.: se quiser mover a caixa de início de sessão 50px para a direita, "
 "poderá escrever:"
 
-#: admin/settings/settings.php:198
+#: admin/settings/settings.php:204
 msgid "#login {padding: 8% 0 0 50px;}"
 msgstr "#login {padding: 8% 0 0 50px;}"
 
-#: admin/settings/settings.php:198
+#: admin/settings/settings.php:204
 msgid "No preview for this Custom CSS"
 msgstr "Sem pré-visualização para este CSS personalizado"
 
-#: admin/settings/settings.php:204
+#: admin/settings/settings.php:211
 msgid "Preview"
 msgstr "Pré-visualização"
 
-#: admin/settings/settings.php:208
+#: admin/settings/settings.php:215
 msgid "Save the settings to update the preview."
 msgstr "Guarde as definições para actualizar a pré-visualização."
 
-#: admin/settings/settings.php:208
+#: admin/settings/settings.php:215
 msgid ""
 "If you've choosen a fullscreen image background, scroll down to make it "
 "appear..."
@@ -307,43 +319,43 @@ msgstr ""
 "Se escolheu uma imagem de fundo em ecrã completo, deslize para baixo para a "
 "fazer aparecer..."
 
-#: admin/settings/settings.php:218
+#: admin/settings/settings.php:225
 msgid "Username"
 msgstr "Nome de utilizador"
 
-#: admin/settings/settings.php:223
+#: admin/settings/settings.php:230
 msgid "Password"
 msgstr "Senha"
 
-#: admin/settings/settings.php:229
+#: admin/settings/settings.php:236
 msgid "Remember Me"
 msgstr "Lembrar-me"
 
-#: admin/settings/settings.php:233
+#: admin/settings/settings.php:240
 msgid "Log In"
 msgstr "Iniciar sessão"
 
-#: admin/settings/settings.php:238
+#: admin/settings/settings.php:245
 msgid "Register"
 msgstr "Registar"
 
-#: admin/settings/settings.php:238
+#: admin/settings/settings.php:245
 msgid "Lost your password?"
 msgstr "Esqueceu-se da senha?"
 
-#: admin/settings/settings.php:240
+#: admin/settings/settings.php:247
 msgid "Back to"
 msgstr "Voltar a"
 
-#: admin/settings/settings.php:249
+#: admin/settings/settings.php:256
 msgid "Premium Version"
 msgstr "Versão Premium"
 
-#: admin/settings/settings.php:253
+#: admin/settings/settings.php:260
 msgid "Go Premium"
 msgstr "Obter Premium"
 
-#: admin/settings/settings.php:258
+#: admin/settings/settings.php:265
 msgid ""
 "Upgrade to the Premium Version to take advantage of new and more advanced "
 "features..."
@@ -351,7 +363,7 @@ msgstr ""
 "Actualize para a Versão Premium para tirar partido dos novos e mais "
 "avançados recursos..."
 
-#: admin/settings/settings.php:260
+#: admin/settings/settings.php:267
 msgid ""
 "Although the free version is full-featured and can be used without any "
 "limits, the premium version provides more features:"
@@ -359,36 +371,36 @@ msgstr ""
 "Embora a versão gratuita seja completa e possa ser utilizada sem limitações, "
 "a versão premium fornece mais recursos:"
 
-#: admin/settings/settings.php:262
+#: admin/settings/settings.php:269
 msgid "Colors transparency"
 msgstr "Transparência de cores"
 
-#: admin/settings/settings.php:263
+#: admin/settings/settings.php:270
 msgid "Links to external images"
 msgstr "Ligações para imagens externas"
 
-#: admin/settings/settings.php:264
+#: admin/settings/settings.php:271
 msgid "Fullscren background image or not. And controls over its position."
 msgstr ""
 "Imagem de fundo em tamanho completo ou não. Controlos sobre a sua posição."
 
-#: admin/settings/settings.php:265
+#: admin/settings/settings.php:272
 msgid "Instant preview (for Custom CSS too)"
 msgstr "Pré-visualização instantânea (também para CSS personalizado)"
 
-#: admin/settings/settings.php:266
+#: admin/settings/settings.php:273
 msgid "Settings Import / Export"
 msgstr "Importar / exportar definições"
 
-#: admin/settings/settings.php:267
+#: admin/settings/settings.php:274
 msgid "Support via dedicated forum"
 msgstr "Suporte via fórum dedicado"
 
-#: admin/settings/settings.php:270
+#: admin/settings/settings.php:277
 msgid "And don't worry about your free version settings..."
 msgstr "E não se preocupe com as definições da sua versão gratuita..."
 
-#: admin/settings/settings.php:270
+#: admin/settings/settings.php:277
 msgid ""
 "You'll be able to retrieve them with a migration tool included in the "
 "premium version."
@@ -396,7 +408,7 @@ msgstr ""
 "Terá a possibilidade de as obter com uma ferramenta de migração incluída na "
 "versão premium."
 
-#: admin/settings/settings.php:272
+#: admin/settings/settings.php:279
 #, php-format
 msgid ""
 "A one year license is included with each purchase. This license entitles you "
@@ -410,6 +422,6 @@ msgstr ""
 "livre de continuar utilizar a versão Premium que tenha no momento em que a "
 "licença expira."
 
-#: admin/settings/settings.php:274
+#: admin/settings/settings.php:281
 msgid "Go Premium Now!"
 msgstr "Obter Premium Agora!"

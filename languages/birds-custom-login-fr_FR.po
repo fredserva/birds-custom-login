@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Birds Portfolio\n"
-"POT-Creation-Date: 2015-11-02 15:42+0100\n"
-"PO-Revision-Date: 2015-11-02 15:43+0100\n"
+"POT-Creation-Date: 2015-11-03 16:31+0100\n"
+"PO-Revision-Date: 2015-11-03 16:31+0100\n"
 "Last-Translator: Frédéric Serva <fred.serva@gmail.com>\n"
 "Language-Team: Frédéric Serva <fred.serva@gmail.com>\n"
 "Language: fr_FR\n"
@@ -17,6 +17,10 @@ msgstr ""
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SearchPath-0: .\n"
+
+#: admin/settings/apply-css.php:355 admin/settings/settings.php:41
+msgid "Powered by WordPress"
+msgstr "Propulsé par WordPress"
 
 #: admin/settings/class-settings.php:25
 msgid "Custom Settings"
@@ -86,6 +90,10 @@ msgstr "Largeur maxi : 320px"
 #: admin/settings/settings.php:39
 msgid "Logo Alt text"
 msgstr "Texte ALT du logo"
+
+#: admin/settings/settings.php:40
+msgid "Default is \"Powered by WordPress\""
+msgstr "La valeur par défaut est \"Propulsé par WordPress\""
 
 #: admin/settings/settings.php:45
 msgid "Logo bottom margin"
