@@ -1,15 +1,15 @@
 <?php
 /**
-* Custom Login Functions
-*
-* @package    Birds_Custom_Login
-* @subpackage birds-custom-login/settings/admin
-* @since      1.0.0
-*/
+ * Custom Login Functions
+ *
+ * @package    Birds_Custom_Login
+ * @subpackage birds-custom-login/settings/admin
+ * @since      1.0.0
+ */
 
 /**
-* Logo href
-*/
+ * Logo href
+ */
 if ( !function_exists('birds_custom_url_login')) {
     function birds_custom_url_login()  {
         return get_bloginfo( 'url' );
@@ -18,8 +18,8 @@ if ( !function_exists('birds_custom_url_login')) {
 }
 
 /**
-* HEX to RGBA
-*/
+ * HEX to RGBA
+ */
 if ( !function_exists('birds_hex2rgba')) {
     function birds_hex2rgba($color, $opacity = false) {
 
