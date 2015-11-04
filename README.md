@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/fredserva/birds-custom-login.svg?branch=master)](https://travis-ci.org/fredserva/birds-custom-login)
 [![Total Downloads](https://img.shields.io/wordpress/plugin/dt/birds-custom-login.svg)](http://wordpress.org/plugins/birds-custom-login/)
+[![WordPress Rating](https://img.shields.io/wordpress/plugin/r/birds-custom-login.svg)](http://wordpress.org/plugins/birds-custom-login/)
 [![WordPress](https://img.shields.io/wordpress/v/birds-custom-login.svg)](http://wordpress.org/plugins/birds-custom-login/)
 
 **Contributors**: fredserva
