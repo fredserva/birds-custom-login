@@ -3,51 +3,51 @@
  * Custom Login Functions
  *
  * @package    Birds_Custom_Login
- * @subpackage birds-custom-login/settings/admin
+ * @subpackage Birds_Custom_Login/settings/admin
  * @since      1.0.0
  */
 
 /**
  * Logo href
  */
-if ( !function_exists('birds_custom_url_login')) {
-    function birds_custom_url_login()  {
+if ( ! function_exists( 'birds_custom_url_login' ) ) {
+    function birds_custom_url_login() {
         return get_bloginfo( 'url' );
     }
-    add_filter('login_headerurl', 'birds_custom_url_login');
+    add_filter( 'login_headerurl', 'birds_custom_url_login' );
 }
 
 /**
  * HEX to RGBA
  */
-if ( !function_exists('birds_hex2rgba')) {
-    function birds_hex2rgba($color, $opacity = false) {
+if ( ! function_exists( 'birds_hex2rgba' ) ) {
+    function birds_hex2rgba( $color, $opacity = false ) {
 
         $default = 'rgb(0,0,0)';
         //Return default if no color provided
-        if(empty($color))
+        if ( empty( $color ) )
             return $default;
         //Sanitize $color if "#" is provided
-        if ($color[0] == '#' ) {
+        if ( $color[0] === '#' ) {
             $color = substr( $color, 1 );
         }
         //Check if color has 6 or 3 characters and get values
-        if (strlen($color) == 6) {
+        if ( strlen( $color ) === 6 ) {
             $hex = array( $color[0] . $color[1], $color[2] . $color[3], $color[4] . $color[5] );
-        } elseif ( strlen( $color ) == 3 ) {
+        } elseif ( strlen( $color ) === 3 ) {
             $hex = array( $color[0] . $color[0], $color[1] . $color[1], $color[2] . $color[2] );
         } else {
             return $default;
         }
         //Convert hexadec to rgb
-        $rgb =  array_map('hexdec', $hex);
+        $rgb = array_map( 'hexdec', $hex );
         //Check if opacity is set(rgba or rgb)
-        if($opacity){
-            if(abs($opacity) > 1)
+        if ( $opacity ) {
+            if ( abs( $opacity ) > 1 )
                 $opacity = 1.0;
-            $output = 'rgba('.implode(",",$rgb).','.$opacity.')';
+            $output = 'rgba( '.implode(",",$rgb).','.$opacity.' )';
         } else {
-            $output = 'rgb('.implode(",",$rgb).')';
+            $output = 'rgb( '.implode(",",$rgb).' )';
         }
         //Return rgb(a) color string
         return $output;
@@ -55,34 +55,29 @@ if ( !function_exists('birds_hex2rgba')) {
 }
 
 /**
-* Darken/Lighten HEX
-*/
-if ( !function_exists('birds_color_creator')) {
-    function birds_color_creator($color, $per)
-    {
+ * Darken/Lighten HEX
+ */
+if ( ! function_exists( 'birds_color_creator' ) ) {
+    function birds_color_creator( $color, $per ) {
         $color = substr( $color, 1 ); // Removes first character of hex string (#)
         $rgb = ''; // Empty variable
         $per = $per/100*255; // Creates a percentage to work with. Change the middle figure to control color temperature
 
-        if  ($per < 0 ) // Check to see if the percentage is a negative number
-        {
+        if ( $per < 0 ) { // Check to see if the percentage is a negative number
             // DARKER
-            $per =  abs($per); // Turns Neg Number to Pos Number
-            for ($x=0;$x<3;$x++)
-            {
-                $c = hexdec(substr($color,(2*$x),2)) - $per;
-                $c = ($c < 0) ? 0 : dechex($c);
-                $rgb .= (strlen($c) < 2) ? '0'.$c : $c;
+            $per =  abs( $per ); // Turns Neg Number to Pos Number
+            for ( $x=0; $x<3; $x++ ) {
+                $c = hexdec( substr( $color, ( 2*$x ), 2 ) ) - $per;
+                $c = ( $c < 0 ) ? 0 : dechex( $c );
+                $rgb .= ( strlen( $c ) < 2 ) ? '0'.$c : $c;
             }
         }
-        else
-        {
+        else {
             // LIGHTER
-            for ($x=0;$x<3;$x++)
-            {
-                $c = hexdec(substr($color,(2*$x),2)) + $per;
-                $c = ($c > 255) ? 'ff' : dechex($c);
-                $rgb .= (strlen($c) < 2) ? '0'.$c : $c;
+            for ( $x=0; $x<3; $x++ ) {
+                $c = hexdec( substr( $color, ( 2*$x ), 2 ) ) + $per;
+                $c = ( $c > 255 ) ? 'ff' : dechex( $c );
+                $rgb .= ( strlen( $c ) < 2 ) ? '0'.$c : $c;
             }
         }
         return '#'.$rgb;
@@ -90,14 +85,14 @@ if ( !function_exists('birds_color_creator')) {
 }
 
 /**
-* Preview
-*/
-add_action('admin_head', 'birds_apply_preview_css');
+ * Preview
+ */
+add_action( 'admin_head', 'birds_apply_preview_css' );
 function birds_apply_preview_css() {
 
     // Logo & Background
     $logo_id = get_setting_bcl('bcl_elements_section', 'bcl_logo_upload');
-    if ($logo_id != '') {
+    if ( $logo_id !== '' ) {
         $logo_attributes = wp_get_attachment_image_src($logo_id, 'full');
         $logo = $logo_attributes[0] ;
         $logo_width = $logo_attributes[1] ;
@@ -114,10 +109,10 @@ function birds_apply_preview_css() {
     $bcl_label_color = get_setting_bcl( 'bcl_form_section', 'bcl_label_color' );
     $bcl_form_bg_color = get_setting_bcl( 'bcl_form_section', 'bcl_form_bg_color' );
     $bcl_form_style = get_setting_bcl( 'bcl_form_section', 'bcl_form_style' );
-    if ($bcl_form_style == 'flat') {
+    if ( $bcl_form_style === 'flat' ) {
         $bcl_form_style_shadow = 'none';
     }
-    if ($bcl_form_style == 'shadow') {
+    if ( $bcl_form_style === 'shadow' ) {
         $bcl_form_style_shadow = '0 1px 3px rgba(0,0,0,.13)';
     }
     $bcl_form_button_color = get_setting_bcl( 'bcl_form_section', 'bcl_form_button_color' );
@@ -129,27 +124,27 @@ function birds_apply_preview_css() {
     $rgba_015 = birds_hex2rgba($lighter, 0.15);
     $bcl_rounded_form = get_setting_bcl( 'bcl_form_section', 'bcl_rounded_form' );
     $bcl_rounded_nb = get_setting_bcl( 'bcl_form_section', 'bcl_rounded_nb' );
-    if ($bcl_rounded_form == 'yes') {
+    if ( $bcl_rounded_form === 'yes' ) {
         $letsroundit = '-webkit-border-radius: '.$bcl_rounded_nb.'px;-moz-border-radius: '.$bcl_rounded_nb.'px;border-radius: '.$bcl_rounded_nb.'px;';
     }
-    if ($bcl_rounded_form == 'no') {
+    if ( $bcl_rounded_form === 'no' ) {
         $letsroundit = '';
     }
     $bcl_form_text_button_color = get_setting_bcl( 'bcl_form_section', 'bcl_form_button_text_color' );
 
     // Below Form
     $bcl_reg = get_setting_bcl( 'bcl_below_form_section', 'bcl_reg' );
-    if ($bcl_reg == 'yes') {
+    if ( $bcl_reg === 'yes' ) {
         $none = 'display: none';
     }
-    if ($bcl_reg == 'no') {
+    if ( $bcl_reg === 'no' ) {
         $none = '';
     }
     $bcl_backto = get_setting_bcl( 'bcl_below_form_section', 'bcl_backto' );
-    if ($bcl_backto == 'yes') {
+    if ( $bcl_backto === 'yes' ) {
         $none2 = 'display: none';
     }
-    if ($bcl_backto == 'no') {
+    if ( $bcl_backto === 'no' ) {
         $none2 = '';
     }
     $bcl_reg_color = get_setting_bcl( 'bcl_below_form_section', 'bcl_reg_color' );
@@ -160,13 +155,13 @@ function birds_apply_preview_css() {
     // Custom CSS
     $bcl_custom_css = get_setting_bcl( 'bcl_custom_css_section', 'bcl_custom_css' );
     $bcl_custom_css_sanitized = esc_textarea($bcl_custom_css);
-    if ($bcl_custom_css != '') {
+    if ( $bcl_custom_css !== '' ) {
         echo '<style>' . $bcl_custom_css_sanitized . '</style>';
     }
 
     // Fullscreen Background
     $bcl_fullscreen_bg = get_setting_bcl('bcl_elements_section', 'bcl_fullscreen_bg');
-    if ($bcl_fullscreen_bg != '') {
+    if ( $bcl_fullscreen_bg !== '' ) {
         $full_attributes = wp_get_attachment_image_src($bcl_fullscreen_bg, 'full');
         $full = $full_attributes[0] ;
         echo '
@@ -340,7 +335,7 @@ function birds_custom_login_css() {
 
     // Logo & Background
     $logo_id = get_setting_bcl('bcl_elements_section', 'bcl_logo_upload');
-    if ($logo_id != '') {
+    if ( $logo_id !== '' ) {
         $logo_attributes = wp_get_attachment_image_src($logo_id, 'full');
         $logo = $logo_attributes[0] ;
         $logo_width = $logo_attributes[1] ;
@@ -351,7 +346,7 @@ function birds_custom_login_css() {
         $logo_height = '84' ;
     }
     $bcl_logo_alt_text = get_setting_bcl( 'bcl_elements_section', 'bcl_logo_alt_text' );
-    if ( empty($bcl_logo_alt_text) ) {
+    if ( empty( $bcl_logo_alt_text ) ) {
         $bcl_logo_alt_text = __('Powered by WordPress', 'birds-custom-login');
     }
     $bcl_logo_bottom_margin = get_setting_bcl( 'bcl_elements_section', 'bcl_logo_bottom_margin' );
@@ -361,10 +356,10 @@ function birds_custom_login_css() {
     $bcl_label_color = get_setting_bcl( 'bcl_form_section', 'bcl_label_color' );
     $bcl_form_bg_color = get_setting_bcl( 'bcl_form_section', 'bcl_form_bg_color' );
     $bcl_form_style = get_setting_bcl( 'bcl_form_section', 'bcl_form_style' );
-    if ($bcl_form_style == 'flat') {
+    if ( $bcl_form_style === 'flat' ) {
         $bcl_form_style_shadow = 'none';
     }
-    if ($bcl_form_style == 'shadow') {
+    if ( $bcl_form_style === 'shadow' ) {
         $bcl_form_style_shadow = '0 1px 3px rgba(0,0,0,.13)';
     }
     $bcl_form_button_color = get_setting_bcl( 'bcl_form_section', 'bcl_form_button_color' );
@@ -376,27 +371,27 @@ function birds_custom_login_css() {
     $rgba_015 = birds_hex2rgba($lighter, 0.15);
     $bcl_rounded_form = get_setting_bcl( 'bcl_form_section', 'bcl_rounded_form' );
     $bcl_rounded_nb = get_setting_bcl( 'bcl_form_section', 'bcl_rounded_nb' );
-    if ($bcl_rounded_form == 'yes') {
+    if ( $bcl_rounded_form === 'yes' ) {
         $letsroundit = '-webkit-border-radius: '.$bcl_rounded_nb.'px;-moz-border-radius: '.$bcl_rounded_nb.'px;border-radius: '.$bcl_rounded_nb.'px;';
     }
-    if ($bcl_rounded_form == 'no') {
+    if ( $bcl_rounded_form === 'no' ) {
         $letsroundit = '';
     }
     $bcl_form_text_button_color = get_setting_bcl( 'bcl_form_section', 'bcl_form_button_text_color' );
 
     // Below Form
     $bcl_reg = get_setting_bcl( 'bcl_below_form_section', 'bcl_reg' );
-    if ($bcl_reg == 'yes') {
+    if ( $bcl_reg === 'yes' ) {
         $none = 'display: none';
     }
-    if ($bcl_reg == 'no') {
+    if ( $bcl_reg === 'no' ) {
         $none = '';
     }
     $bcl_backto = get_setting_bcl( 'bcl_below_form_section', 'bcl_backto' );
-    if ($bcl_backto == 'yes') {
+    if ( $bcl_backto === 'yes' ) {
         $none2 = 'display: none';
     }
-    if ($bcl_backto == 'no') {
+    if ( $bcl_backto === 'no' ) {
         $none2 = '';
     }
     $bcl_reg_color = get_setting_bcl( 'bcl_below_form_section', 'bcl_reg_color' );
@@ -410,13 +405,13 @@ function birds_custom_login_css() {
     // Custom CSS
     $bcl_custom_css = get_setting_bcl( 'bcl_custom_css_section', 'bcl_custom_css' );
     $bcl_custom_css_sanitized = esc_textarea($bcl_custom_css);
-    if ($bcl_custom_css != '') {
+    if ( $bcl_custom_css !== '' ) {
         echo '<style>' . $bcl_custom_css_sanitized . '</style>';
     }
 
     // Fullscreen Background
     $bcl_fullscreen_bg = get_setting_bcl('bcl_elements_section', 'bcl_fullscreen_bg');
-    if ($bcl_fullscreen_bg != '') {
+    if ( $bcl_fullscreen_bg !== '' ) {
         $full_attributes = wp_get_attachment_image_src($bcl_fullscreen_bg, 'full');
         $full = $full_attributes[0] ;
         echo '

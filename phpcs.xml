@@ -17,8 +17,8 @@
         <exclude name="Generic.Files.LowercasedFilename.NotFound" />
         <exclude name="Generic.Functions.OpeningFunctionBraceKernighanRitchie.BraceOnNewLine" />
         <exclude name="PEAR.Functions.FunctionCallSignature.EmptyLine" />
-        <exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
         <exclude name="PEAR.WhiteSpace.ScopeIndent" />
+        <exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
         <exclude name="Squiz.Commenting.BlockComment.NoNewLine" />
         <exclude name="Squiz.Commenting.ClassComment.Missing" />
         <exclude name="Squiz.Commenting.ClassComment.SpacingBefore" />

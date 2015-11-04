@@ -1,49 +1,49 @@
 <?php
 /**
-* Settings page
-*
-* @package    Birds_Custom_Login
-* @subpackage birds-custom-login/settings/admin
-* @since      1.0.0
-*/
+ * Settings page
+ *
+ * @package    Birds_Custom_Login
+ * @subpackage birds-custom-login/settings/admin
+ * @since      1.0.0
+ */
 
 $text_domain = 'birds-custom-login';
 $logo = plugin_dir_url( dirname( dirname( __FILE__ ) ) ) . 'admin/images/w-logo-blue.png';
 $icon = plugin_dir_url( dirname( dirname( __FILE__ ) ) ) . 'admin/images/birds.png';
-$blog_name = get_bloginfo('name');
-$blog_url = get_bloginfo('url');
+$blog_name = get_bloginfo( 'name' );
+$blog_url = get_bloginfo( 'url' );
 
 // Top level page & First Section
 $birds_custom_login_top_page = create_settings_page(
     'birds_custom_login_settings',
-    '<img src="'.$icon.'"> '.__('Custom Login Settings', $text_domain),
+    '<img src="'.$icon.'"> '.__( 'Custom Login Settings', $text_domain ),
     array(
             'parent' => 'themes.php',
-            'title' => __('Birds Custom Login', $text_domain),
+            'title' => __( 'Birds Custom Login', $text_domain ),
             'icon_url' => 'dashicons-controls-play',
             'position' => '63.5'
         ),
     array(
             'bcl_elements_section' => array(
-                'title' => __('Logo & Background', $text_domain),
+                'title' => __( 'Logo & Background', $text_domain ),
                 'description' => '',
                 'fields' => array(
                     'bcl_logo_upload'  => array(
                         'type'  => 'media',
                         'label' => __( 'Logo', $text_domain ),
-                        'description' => __('Upload your own logo.', $text_domain).'<br>'.__('Max width: 320px', $text_domain),
+                        'description' => __( 'Upload your own logo.', $text_domain ).'<br>'.__( 'Max width: 320px', $text_domain ),
                         'default' => $logo
                     ),
                     'bcl_logo_alt_text' => array(
                         'type'  => 'text',
                         'label' => __( 'Logo Alt text', $text_domain ),
-                        'description' => __('Default is "Powered by WordPress"', $text_domain),
-                        'default' => __('Powered by WordPress', $text_domain)
+                        'description' => __( 'Default is "Powered by WordPress"', $text_domain ),
+                        'default' => __( 'Powered by WordPress', $text_domain )
                     ),
                     'bcl_logo_bottom_margin' => array(
                         'type'  => 'number',
                         'label' => __( 'Logo bottom margin', $text_domain ),
-                        'description' => __('Default is 25px and it\'s a good value, but if you want to increase this margin...', $text_domain),
+                        'description' => __( 'Default is 25px and it\'s a good value, but if you want to increase this margin...', $text_domain ),
                         'attributes' => array( 'placeholder' => '25' ),
                         'default' => '25'
                     ),
@@ -56,7 +56,7 @@ $birds_custom_login_top_page = create_settings_page(
                     'bcl_fullscreen_bg'  => array(
                         'type'  => 'media',
                         'label' => __( 'Background Image', $text_domain ),
-                        'description' => __('You can upload a background image here.', $text_domain).'<br>'.__('The image will stretch to fit the page, and will automatically resize as the window size changes.', $text_domain).'<br><br>'.__('You\'ll have the best results by using images with a minimum width of 1024px.', $text_domain),
+                        'description' => __( 'You can upload a background image here.', $text_domain ).'<br>'.__( 'The image will stretch to fit the page, and will automatically resize as the window size changes.', $text_domain ).'<br><br>'.__( 'You\'ll have the best results by using images with a minimum width of 1024px.', $text_domain ),
                         'default' => ''
                     ),
                 )
@@ -64,10 +64,10 @@ $birds_custom_login_top_page = create_settings_page(
     ),
     array(
             'tabs' => true,
-            'submit' => __('Save Settings', $text_domain),
-            'reset' => __('Reset', $text_domain),
-        'description' => __('Save the settings and you will be able to preview your Custom Login Page.', $text_domain),
-            'updated' => __('Settings saved!', $text_domain)
+            'submit' => __( 'Save Settings', $text_domain ),
+            'reset' => __( 'Reset', $text_domain ),
+        'description' => __( 'Save the settings and you will be able to preview your Custom Login Page.', $text_domain ),
+            'updated' => __( 'Settings saved!', $text_domain )
     )
 );
 
@@ -79,7 +79,7 @@ $birds_custom_login_top_page->apply_settings( array(
             'bcl_rounded_form'  => array(
                 'type'    => 'select',
                 'label'   => __( 'Rounded Form', $text_domain ),
-                'description' => __('Would you like to round the form border?', $text_domain),
+                'description' => __( 'Would you like to round the form border?', $text_domain ),
                 'options' => array(
                     'no'   => __( 'No', $text_domain ),
                     'yes'   => __( 'Yes', $text_domain )
@@ -89,7 +89,7 @@ $birds_custom_login_top_page->apply_settings( array(
             'bcl_rounded_nb' => array(
                 'type'  => 'number',
                 'label' => __( 'Radius', $text_domain ),
-                'description' => __('How much would you like to round the border?', $text_domain),
+                'description' => __( 'How much would you like to round the border?', $text_domain ),
                 'attributes' => array( 'placeholder' => '20' ),
                 'default' => '20'
             ),
@@ -109,8 +109,8 @@ $birds_custom_login_top_page->apply_settings( array(
                 'type'    => 'radio',
                 'label'   => __( 'Form Style', $text_domain ),
                 'options' => array(
-                    'flat'   => __( 'Flat', $text_domain),
-                    'shadow' => __( 'Shadowed Box', $text_domain)
+                    'flat'   => __( 'Flat', $text_domain ),
+                    'shadow' => __( 'Shadowed Box', $text_domain )
                 ),
                 'description' => __( 'Choose the style of the form. Default is Shadow', $text_domain ),
                 'default' => 'shadow'
@@ -135,7 +135,7 @@ $birds_custom_login_top_page->apply_settings( array(
             'bcl_reg' => array(
                 'type'    => 'select',
                 'label'   => __( '"Register<br>Lost your password?"<br>links', $text_domain ),
-                'description' => __('Would you like to remove the "Register | Lost your password?" links?', $text_domain),
+                'description' => __( 'Would you like to remove the "Register | Lost your password?" links?', $text_domain ),
                 'options' => array(
                     'no'   => __( 'No', $text_domain ),
                     'yes'   => __( 'Yes', $text_domain )
@@ -145,7 +145,7 @@ $birds_custom_login_top_page->apply_settings( array(
             'bcl_backto' => array(
                 'type'    => 'select',
                 'label'   => __( '"Back to" link', $text_domain ),
-                'description' => __('Would you like to remove the "&larr; Back to" link?', $text_domain),
+                'description' => __( 'Would you like to remove the "&larr; Back to" link?', $text_domain ),
                 'options' => array(
                     'no'   => __( 'No', $text_domain ),
                     'yes'   => __( 'Yes', $text_domain )
@@ -222,29 +222,29 @@ $birds_custom_login_top_page->apply_settings( array(
 
                             <div name="loginform" id="pre_loginform" action="#" method="post">
                                 <p>
-                                    <label for="pre_user_login">'.__('Username', $text_domain ).'<br />
+                                    <label for="pre_user_login">'.__( 'Username', $text_domain ).'<br />
                                         <input type="text" name="log" id="pre_user_login" class="pre_input" value="" size="20" />
                                     </label>
                                 </p>
                                 <p>
-                                    <label for="pre_user_pass">'.__('Password', $text_domain ).'<br />
+                                    <label for="pre_user_pass">'.__( 'Password', $text_domain ).'<br />
                                         <input type="password" name="pwd" id="pre_user_pass" class="pre_input" value="" size="20" />
                                     </label>
                                 </p>
                                 <p class="pre_forgetmenot">
                                     <label for="pre_rememberme">
-                                        <input name="rememberme" type="checkbox" id="pre_rememberme" value="forever"  /> '.__('Remember Me', $text_domain ).'
+                                        <input name="rememberme" type="checkbox" id="pre_rememberme" value="forever"  /> '.__( 'Remember Me', $text_domain ).'
                                         </label>
                                 </p>
                                 <p class="pre_submit">
-                                    <input type="submit" name="wp-submit" id="pre_wp-submit" class="button button-primary button-large" value="'.__('Log In', $text_domain ).'" />
+                                    <input type="submit" name="wp-submit" id="pre_wp-submit" class="button button-primary button-large" value="'.__( 'Log In', $text_domain ).'" />
                                 </p>
                             </div>
 
                             <p id="pre_nav">
-                                <a class="pre_reg" href="#">'.__('Register', $text_domain).'</a> | <a class="pre_pass" href="#" title="Password Lost and Found">'.__('Lost your password?', $text_domain ).'</a>
+                                <a class="pre_reg" href="#">'.__( 'Register', $text_domain ).'</a> | <a class="pre_pass" href="#" title="Password Lost and Found">'.__( 'Lost your password?', $text_domain ).'</a>
                             </p>
-                            <p id="pre_backtoblog"><a href="#" title="Are you lost?">&larr; '.__('Back to', $text_domain ).' '.$blog_name.'</a></p>
+                            <p id="pre_backtoblog"><a href="#" title="Are you lost?">&larr; '.__( 'Back to', $text_domain ).' '.$blog_name.'</a></p>
                         </div>
                     </div>
 

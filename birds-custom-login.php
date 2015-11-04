@@ -36,7 +36,7 @@ class Birds_Custom_Login_Main {
      */
     public static function get_instance() {
         // If an instance hasn't been created and set to $instance create an instance and set it to $instance.
-        if ( null == self::$instance ) {
+        if ( null === self::$instance ) {
             self::$instance = new self;
         }
 
@@ -90,7 +90,7 @@ class Birds_Custom_Login_Main {
      * Enqueue and register Admin JavaScript files here.
      */
     public function register_admin_scripts() {
-        wp_enqueue_script( 'birds-custom-login-backstretch', plugins_url( '/birds-custom-login/admin/js/jquery.backstretch.min.js' ), array('jquery'), null, true );
+        wp_enqueue_script( 'birds-custom-login-backstretch', plugins_url( '/birds-custom-login/admin/js/jquery.backstretch.min.js' ), array( 'jquery' ), null, true );
     }
 
     /**
