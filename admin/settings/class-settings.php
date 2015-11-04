@@ -161,11 +161,11 @@ if ( ! class_exists( 'Birds_Settings_Bcl' ) ) {
     <h1><?php echo $this->title; ?></h1>
     <?php
         settings_errors();
-        if ( $text = $this->args['description'] ) { echo wpautop( $text ); }
-            do_settings_sections( $this->page );
-        if ( ! $this->empty ) {
-            settings_fields( $this->page );
-            if ( $this->args['tabs'] && count( $this->settings ) > 1 ) {
+    if ( $text = $this->args['description'] ) { echo wpautop( $text ); }
+        do_settings_sections( $this->page );
+    if ( ! $this->empty ) {
+        settings_fields( $this->page );
+        if ( $this->args['tabs'] && count( $this->settings ) > 1 ) {
     ?>
     <div class="birds-settings-tabs"></div>
     <?php   }
