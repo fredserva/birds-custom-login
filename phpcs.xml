@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <ruleset name="Birds Custom Login">
     <description>The code standard for Birds Custom Login</description>
-    <file>.</file>
     <file>uninstall.php</file>
     <file>admin/settings/apply-css.php</file>
     <file>admin/settings/class-settings.php</file>
