@@ -11,11 +11,11 @@ php:
     - 5.4
 
 env:
-    - WP_VERSION=master WP_MULTISITE=0
-    - WP_VERSION=4.3 WP_MULTISITE=0
-    - WP_VERSION=4.2 WP_MULTISITE=0
-    - WP_VERSION=4.1 WP_MULTISITE=0
-    - WP_VERSION=4.0 WP_MULTISITE=0
+    - WP_VERSION=master
+    - WP_VERSION=4.3
+    - WP_VERSION=4.2
+    - WP_VERSION=4.1
+    - WP_VERSION=4.0
 
 # Grab the setup script and execute
 before_script:
