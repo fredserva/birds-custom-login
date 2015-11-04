@@ -155,23 +155,25 @@ if ( ! class_exists( 'Birds_Settings_Bcl' ) ) {
         }
 
         public function do_page()
-        { ?>
+        {
+        ?>
 <form action="options.php" method="POST" enctype="multipart/form-data" class="wrap">
     <h1><?php echo $this->title; ?></h1>
     <?php
-         settings_errors();
-         if ( $text = $this->args['description'] ) { echo wpautop( $text ); }
-         do_settings_sections( $this->page );
-         if ( ! $this->empty ) {
-             settings_fields( $this->page );
-             if ( $this->args['tabs'] && count( $this->settings ) > 1 ) { ?>
+        settings_errors();
+        if ( $text = $this->args['description'] ) { echo wpautop( $text ); }
+            do_settings_sections( $this->page );
+        if ( ! $this->empty ) {
+            settings_fields( $this->page );
+            if ( $this->args['tabs'] && count( $this->settings ) > 1 ) {
+    ?>
     <div class="birds-settings-tabs"></div>
-    <?php }
-             submit_button( $this->args['submit'], 'large primary' );
-             if ( $this->args['reset'] ) {
-                 submit_button( $this->args['reset'], 'small', "{$this->page}_reset", true, array( 'onclick' => "return confirm('" . __( 'Do you really want to reset all these settings to their default values?', self::text_domain ) . "');" ) );
-             }
-         }
+    <?php   }
+            submit_button( $this->args['submit'], 'large primary' );
+            if ( $this->args['reset'] ) {
+                submit_button( $this->args['reset'], 'small', "{$this->page}_reset", true, array( 'onclick' => "return confirm('" . __( 'Do you really want to reset all these settings to their default values?', self::text_domain ) . "');" ) );
+            }
+        }
     ?>
 </form>
 <?php }
@@ -213,7 +215,6 @@ if ( ! class_exists( 'Birds_Settings_Bcl' ) ) {
             } else {
                 echo "<input name='{$id}[{$this->page}_setting]' type='hidden' value='{$id}' class='birds-settings-section-ante' />";
             }
-//            echo "<input name='{$id}[{$this->page}_setting]' type='hidden' value='{$id}' class='birds-settings-section' />";
             if ( $text = $this->settings[$id]['description'] ) {
                 echo wpautop( $text );
             }
@@ -229,86 +230,83 @@ if ( ! class_exists( 'Birds_Settings_Bcl' ) ) {
                 $attrs .= " {$k}='{$v}'";
             }
             $desc = $description ? "<p class='description'>{$description}</p>" : '';
-            switch ( $type )
-            {
+            switch ( $type ) {
                 case 'checkbox':
-                $check = checked( 1, $value, false );
-                echo "<label><input {$attrs} id='{$id}' type='checkbox' value='1' {$check} />";
-                if ( $description ) { echo " {$description}"; }
-                echo "</label>";
-                break;
+                    $check = checked( 1, $value, false );
+                    echo "<label><input {$attrs} id='{$id}' type='checkbox' value='1' {$check} />";
+                    if ( $description ) { echo " {$description}"; }
+                    echo "</label>";
+                    break;
 
                 case 'radio':
-                if ( ! $options ) { _e( 'No options defined.', self::text_domain ); }
-                echo "<fieldset id='{$id}'>";
-                foreach ( $options as $v => $label ) {
-                    $check = checked( $v, $value, false );
-                    $options[$v] = "<label><input {$attrs} type='radio' value='{$v}' {$check} /> {$label}</label>";
-                }
-                echo implode( '<br />', $options );
-                echo "{$desc}</fieldset>";
-                break;
+                    if ( ! $options ) { _e( 'No options defined.', self::text_domain ); }
+                    echo "<fieldset id='{$id}'>";
+                    foreach ( $options as $v => $label ) {
+                        $check = checked( $v, $value, false );
+                        $options[$v] = "<label><input {$attrs} type='radio' value='{$v}' {$check} /> {$label}</label>";
+                    }
+                    echo implode( '<br />', $options );
+                    echo "{$desc}</fieldset>";
+                    break;
 
                 case 'select':
-                if ( ! $options ) { _e( 'No options defined.', self::text_domain ); }
-                echo "<select {$attrs} id='{$id}'>";
-                foreach ( $options as $v => $label ) {
-                    $select = selected( $v, $value, false );
-                    echo "<option value='{$v}' {$select} />{$label}</option>";
-                }
-                echo "</select>{$desc}";
-                break;
+                    if ( ! $options ) { _e( 'No options defined.', self::text_domain ); }
+                    echo "<select {$attrs} id='{$id}'>";
+                    foreach ( $options as $v => $label ) {
+                        $select = selected( $v, $value, false );
+                        echo "<option value='{$v}' {$select} />{$label}</option>";
+                    }
+                    echo "</select>{$desc}";
+                    break;
 
                 case 'media':
-                echo "<fieldset class='birds-settings-media' id='{$id}'><input {$attrs} type='hidden' value='{$value}' />";
-                echo "<p><a class='button button-large birds-select-media' title='{$label}'>" . sprintf( __( 'Select %s', self::text_domain ), $label ) . "</a> ";
-                echo "<a class='button button-small birds-remove-media' title='{$label}'>" . sprintf( __( 'Remove %s', self::text_domain ), $label ) . "</a></p>";
-                if ( $value ) {
-                    echo wpautop( wp_get_attachment_image( $value, 'medium' ) );
-                }
-                echo "{$desc}</fieldset>";
+                    echo "<fieldset class='birds-settings-media' id='{$id}'><input {$attrs} type='hidden' value='{$value}' />";
+                    echo "<p><a class='button button-large birds-select-media' title='{$label}'>" . sprintf( __( 'Select %s', self::text_domain ), $label ) . "</a> ";
+                    echo "<a class='button button-small birds-remove-media' title='{$label}'>" . sprintf( __( 'Remove %s', self::text_domain ), $label ) . "</a></p>";
+                    if ( $value ) {
+                        echo wpautop( wp_get_attachment_image( $value, 'medium' ) );
+                    }
+                    echo "{$desc}</fieldset>";
                 break;
 
                 case 'textarea':
-                echo "<textarea {$attrs} id='{$id}' class='large-text'>{$value}</textarea>{$desc}";
+                    echo "<textarea {$attrs} id='{$id}' class='large-text'>{$value}</textarea>{$desc}";
                 break;
 
                 case 'preview':
-                echo "{$desc}";
+                    echo "{$desc}";
                 break;
 
                 case 'multi':
-                if ( ! $options ) { _e( 'No options defined.', self::text_domain ); }
-                echo "<fieldset id='{$id}'>";
-                foreach ( $options as $n => $label ) {
-                    $a = preg_replace( "/name\=\'(.+)\'/", "name='$1[{$n}]'", $attrs );
-                    $check = checked( 1, $value[$n], false );
-                    $options[$n] = "<label><input {$a} type='checkbox' value='1' {$check} /> {$label}</label>";
-                }
-                echo implode( '<br />', $options );
-                echo "{$desc}</fieldset>";
+                    if ( ! $options ) { _e( 'No options defined.', self::text_domain ); }
+                    echo "<fieldset id='{$id}'>";
+                    foreach ( $options as $n => $label ) {
+                        $a = preg_replace( "/name\=\'(.+)\'/", "name='$1[{$n}]'", $attrs );
+                        $check = checked( 1, $value[$n], false );
+                        $options[$n] = "<label><input {$a} type='checkbox' value='1' {$check} /> {$label}</label>";
+                    }
+                    echo implode( '<br />', $options );
+                    echo "{$desc}</fieldset>";
                 break;
-
 
                 case 'action':
-                if ( ! $action ) { _e( 'No action defined.', self::text_domain ); }
-                echo "<p class='birds-settings-action'><input {$attrs} id='{$id}' type='button' class='button button-large' value='{$label}' /></p>{$desc}";
-                break;
+                    if ( ! $action ) { _e( 'No action defined.', self::text_domain ); }
+                    echo "<p class='birds-settings-action'><input {$attrs} id='{$id}' type='button' class='button button-large' value='{$label}' /></p>{$desc}";
+                    break;
 
                 case 'color':
-                $v = esc_attr( $value );
-                echo "<input {$attrs} id='{$id}' type='text' value='{$v}' class='birds-settings-color' />{$desc}";
-                break;
+                    $v = esc_attr( $value );
+                    echo "<input {$attrs} id='{$id}' type='text' value='{$v}' class='birds-settings-color' />{$desc}";
+                    break;
 
                 default:
-                $v = esc_attr( $value );
-                echo "<input {$attrs} id='{$id}' type='{$type}' value='{$v}' class='regular-text' />{$desc}";
-                break;
+                    $v = esc_attr( $value );
+                    echo "<input {$attrs} id='{$id}' type='{$type}' value='{$v}' class='regular-text' />{$desc}";
+                    break;
             }
         }
 
-        public function sanitize_setting( $inputs )
-        {
+        public function sanitize_setting( $inputs ) {
             $values = array();
             if ( ! empty( $inputs["{$this->page}_setting"] ) ) {
                 $setting = $inputs["{$this->page}_setting"];
@@ -317,62 +315,61 @@ if ( ! class_exists( 'Birds_Settings_Bcl' ) ) {
                     if ( $field['sanitize'] ) {
                         $values[$name] = call_user_func( $field['sanitize'], $input, $name );
                     } else {
-                        switch ( $field['type'] )
-                        {
+                        switch ( $field['type'] ) {
                             case 'checkbox':
-                            $values[$name] = $input ? 1 : 0;
-                            break;
+                                $values[$name] = $input ? 1 : 0;
+                                break;
 
                             case 'radio':
                             case 'select':
-                            $values[$name] = sanitize_key( $input );
-                            break;
+                                $values[$name] = sanitize_key( $input );
+                                break;
 
                             case 'media':
-                            $values[$name] = absint( $input );
-                            break;
+                                $values[$name] = absint( $input );
+                                break;
 
                             case 'color':
-                            $values[$name] = preg_match( '/^#[a-f0-9]{6}$/i', $input ) ? $input : '#f1f1f1';
-                            break;
+                                $values[$name] = preg_match( '/^#[a-f0-9]{6}$/i', $input ) ? $input : '#f1f1f1';
+                                break;
 
                             case 'textarea':
-                            $text = '';
-                            $nl = "BIRDS-SETTINGS-NEW-LINE";
-                            $tb = "BIRDS-SETTINGS-TABULATION";
-                            $lines = explode( $nl, sanitize_text_field( str_replace( "\t", $tb, str_replace( "\n", $nl, $input ) ) ) );
-                            foreach ( $lines as $line ) {
-                                $text .= str_replace( $tb, "\t", trim( $line ) ) . "\n";
-                            }
-                            $values[$name] = trim( $text );
-                            break;
+                                $text = '';
+                                $nl = "BIRDS-SETTINGS-NEW-LINE";
+                                $tb = "BIRDS-SETTINGS-TABULATION";
+                                $lines = explode( $nl, sanitize_text_field( str_replace( "\t", $tb, str_replace( "\n", $nl, $input ) ) ) );
+                                foreach ( $lines as $line ) {
+                                    $text .= str_replace( $tb, "\t", trim( $line ) ) . "\n";
+                                }
+                                $values[$name] = trim( $text );
+                                break;
 
                             case 'multi':
-                            if ( ! $input || empty( $field['options'] ) ) { break; }
-                            foreach ( $field['options'] as $n => $opt ) {
-                                $input[$n] = empty( $input[$n] ) ? 0 : 1;
-                            }
-                            $values[$name] = json_encode( $input );
-                            break;
+                                if ( ! $input || empty( $field['options'] ) ) { break; }
+                                foreach ( $field['options'] as $n => $opt ) {
+                                    $input[$n] = empty( $input[$n] ) ? 0 : 1;
+                                }
+                                $values[$name] = json_encode( $input );
+                                break;
 
                             case 'action':
-                            break;
+                                break;
 
                             case 'email':
-                            $values[$name] = sanitize_email( $input );
-                            break;
+                                $values[$name] = sanitize_email( $input );
+                                break;
 
                             case 'url':
-                            $values[$name] = esc_url_raw( $input );
-                            break;
+                                $values[$name] = esc_url_raw( $input );
+                                break;
 
                             case 'number':
-                            $values[$name] = floatval( $input );
-                            break;
+                                $values[$name] = floatval( $input );
+                                break;
 
                             default:
-                            $values[$name] = sanitize_text_field( $input );
-                            break;
+                                $values[$name] = sanitize_text_field( $input );
+                                break;
                         }
                     }
                 }
@@ -381,14 +378,12 @@ if ( ! class_exists( 'Birds_Settings_Bcl' ) ) {
             return $inputs;
         }
 
-        public static function parse_multi( $result )
-        {
+        public static function parse_multi( $result ) {
             // Check if the result was recorded as JSON, and if so, returns an array instead
             return ( is_string( $result ) && $array = json_decode( $result, true ) ) ? $array : $result;
         }
 
-        public static function plugin_priority()
-        {
+        public static function plugin_priority() {
             $birds_settings = plugin_basename( __FILE__ );
             $active_plugins = get_option( 'active_plugins' );
             if ( $order = array_search( $birds_settings, $active_plugins ) ) {
@@ -400,8 +395,7 @@ if ( ! class_exists( 'Birds_Settings_Bcl' ) ) {
     }
     add_action( 'activated_plugin', array( 'Birds_Settings_Bcl', 'plugin_priority' ) );
 
-    function get_setting_bcl( $setting, $option = false )
-    {
+    function get_setting_bcl( $setting, $option = false ) {
         $setting = get_option( $setting );
         if ( is_array( $setting ) ) {
             if ( $option ) {
@@ -415,11 +409,9 @@ if ( ! class_exists( 'Birds_Settings_Bcl' ) ) {
         return $option ? false : $setting;
     }
 
-    function create_settings_page( $page = 'custom_settings', $title = null, $menu = array(), $settings = array(), $args = array() )
-    {
+    function create_settings_page( $page = 'custom_settings', $title = null, $menu = array(), $settings = array(), $args = array() ) {
         return new Birds_Settings_Bcl( $page, $title, $menu, $settings, $args );
     }
 
 }
-
 ?>

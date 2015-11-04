@@ -45,9 +45,9 @@ if ( ! function_exists( 'birds_hex2rgba' ) ) {
         if ( $opacity ) {
             if ( abs( $opacity ) > 1 )
                 $opacity = 1.0;
-            $output = 'rgba( '.implode(",",$rgb).','.$opacity.' )';
+            $output = 'rgba( '.implode( ",",$rgb ).','.$opacity.' )';
         } else {
-            $output = 'rgb( '.implode(",",$rgb).' )';
+            $output = 'rgb( '.implode( ",",$rgb ).' )';
         }
         //Return rgb(a) color string
         return $output;
@@ -61,21 +61,21 @@ if ( ! function_exists( 'birds_color_creator' ) ) {
     function birds_color_creator( $color, $per ) {
         $color = substr( $color, 1 ); // Removes first character of hex string (#)
         $rgb = ''; // Empty variable
-        $per = $per/100*255; // Creates a percentage to work with. Change the middle figure to control color temperature
+        $per = $per / 100 * 255; // Creates a percentage to work with. Change the middle figure to control color temperature
 
         if ( $per < 0 ) { // Check to see if the percentage is a negative number
             // DARKER
-            $per =  abs( $per ); // Turns Neg Number to Pos Number
-            for ( $x=0; $x<3; $x++ ) {
-                $c = hexdec( substr( $color, ( 2*$x ), 2 ) ) - $per;
+            $per = abs( $per ); // Turns Neg Number to Pos Number
+            for ( $x = 0; $x < 3; $x++ ) {
+                $c = hexdec( substr( $color, ( 2 * $x ), 2 ) ) - $per;
                 $c = ( $c < 0 ) ? 0 : dechex( $c );
                 $rgb .= ( strlen( $c ) < 2 ) ? '0'.$c : $c;
             }
         }
         else {
             // LIGHTER
-            for ( $x=0; $x<3; $x++ ) {
-                $c = hexdec( substr( $color, ( 2*$x ), 2 ) ) + $per;
+            for ( $x = 0; $x < 3; $x++ ) {
+                $c = hexdec( substr( $color, ( 2 * $x ), 2 ) ) + $per;
                 $c = ( $c > 255 ) ? 'ff' : dechex( $c );
                 $rgb .= ( strlen( $c ) < 2 ) ? '0'.$c : $c;
             }
@@ -91,9 +91,9 @@ add_action( 'admin_head', 'birds_apply_preview_css' );
 function birds_apply_preview_css() {
 
     // Logo & Background
-    $logo_id = get_setting_bcl('bcl_elements_section', 'bcl_logo_upload');
+    $logo_id = get_setting_bcl( 'bcl_elements_section', 'bcl_logo_upload' );
     if ( $logo_id !== '' ) {
-        $logo_attributes = wp_get_attachment_image_src($logo_id, 'full');
+        $logo_attributes = wp_get_attachment_image_src( $logo_id, 'full' );
         $logo = $logo_attributes[0] ;
         $logo_width = $logo_attributes[1] ;
         $logo_height = $logo_attributes[2] ;
@@ -116,12 +116,12 @@ function birds_apply_preview_css() {
         $bcl_form_style_shadow = '0 1px 3px rgba(0,0,0,.13)';
     }
     $bcl_form_button_color = get_setting_bcl( 'bcl_form_section', 'bcl_form_button_color' );
-    $rgba_06 = birds_hex2rgba($bcl_form_button_color, 0.6);
+    $rgba_06 = birds_hex2rgba( $bcl_form_button_color, 0.6 );
     $darkPercent = -13;
     $lightPercent = 90;
-    $darker = birds_color_creator($bcl_form_button_color, $darkPercent);
-    $lighter = birds_color_creator($bcl_form_button_color, $lightPercent);
-    $rgba_015 = birds_hex2rgba($lighter, 0.15);
+    $darker = birds_color_creator( $bcl_form_button_color, $darkPercent );
+    $lighter = birds_color_creator( $bcl_form_button_color, $lightPercent );
+    $rgba_015 = birds_hex2rgba( $lighter, 0.15 );
     $bcl_rounded_form = get_setting_bcl( 'bcl_form_section', 'bcl_rounded_form' );
     $bcl_rounded_nb = get_setting_bcl( 'bcl_form_section', 'bcl_rounded_nb' );
     if ( $bcl_rounded_form === 'yes' ) {
@@ -154,15 +154,15 @@ function birds_apply_preview_css() {
 
     // Custom CSS
     $bcl_custom_css = get_setting_bcl( 'bcl_custom_css_section', 'bcl_custom_css' );
-    $bcl_custom_css_sanitized = esc_textarea($bcl_custom_css);
+    $bcl_custom_css_sanitized = esc_textarea( $bcl_custom_css );
     if ( $bcl_custom_css !== '' ) {
         echo '<style>' . $bcl_custom_css_sanitized . '</style>';
     }
 
     // Fullscreen Background
-    $bcl_fullscreen_bg = get_setting_bcl('bcl_elements_section', 'bcl_fullscreen_bg');
+    $bcl_fullscreen_bg = get_setting_bcl( 'bcl_elements_section', 'bcl_fullscreen_bg' );
     if ( $bcl_fullscreen_bg !== '' ) {
-        $full_attributes = wp_get_attachment_image_src($bcl_fullscreen_bg, 'full');
+        $full_attributes = wp_get_attachment_image_src( $bcl_fullscreen_bg, 'full' );
         $full = $full_attributes[0] ;
         echo '
                 <script>
@@ -334,9 +334,9 @@ add_action( 'login_enqueue_scripts', 'birds_custom_login_css' );
 function birds_custom_login_css() {
 
     // Logo & Background
-    $logo_id = get_setting_bcl('bcl_elements_section', 'bcl_logo_upload');
+    $logo_id = get_setting_bcl( 'bcl_elements_section', 'bcl_logo_upload' );
     if ( $logo_id !== '' ) {
-        $logo_attributes = wp_get_attachment_image_src($logo_id, 'full');
+        $logo_attributes = wp_get_attachment_image_src( $logo_id, 'full' );
         $logo = $logo_attributes[0] ;
         $logo_width = $logo_attributes[1] ;
         $logo_height = $logo_attributes[2] ;
@@ -347,7 +347,7 @@ function birds_custom_login_css() {
     }
     $bcl_logo_alt_text = get_setting_bcl( 'bcl_elements_section', 'bcl_logo_alt_text' );
     if ( empty( $bcl_logo_alt_text ) ) {
-        $bcl_logo_alt_text = __('Powered by WordPress', 'birds-custom-login');
+        $bcl_logo_alt_text = __( 'Powered by WordPress', 'birds-custom-login' );
     }
     $bcl_logo_bottom_margin = get_setting_bcl( 'bcl_elements_section', 'bcl_logo_bottom_margin' );
     $bcl_bg_color = get_setting_bcl( 'bcl_elements_section', 'bcl_bg_color' );
@@ -363,12 +363,12 @@ function birds_custom_login_css() {
         $bcl_form_style_shadow = '0 1px 3px rgba(0,0,0,.13)';
     }
     $bcl_form_button_color = get_setting_bcl( 'bcl_form_section', 'bcl_form_button_color' );
-    $rgba_06 = birds_hex2rgba($bcl_form_button_color, 0.6);
+    $rgba_06 = birds_hex2rgba( $bcl_form_button_color, 0.6 );
     $darkPercent = -13;
     $lightPercent = 90;
-    $darker = birds_color_creator($bcl_form_button_color, $darkPercent);
-    $lighter = birds_color_creator($bcl_form_button_color, $lightPercent);
-    $rgba_015 = birds_hex2rgba($lighter, 0.15);
+    $darker = birds_color_creator( $bcl_form_button_color, $darkPercent );
+    $lighter = birds_color_creator( $bcl_form_button_color, $lightPercent );
+    $rgba_015 = birds_hex2rgba( $lighter, 0.15 );
     $bcl_rounded_form = get_setting_bcl( 'bcl_form_section', 'bcl_rounded_form' );
     $bcl_rounded_nb = get_setting_bcl( 'bcl_form_section', 'bcl_rounded_nb' );
     if ( $bcl_rounded_form === 'yes' ) {
@@ -404,15 +404,15 @@ function birds_custom_login_css() {
 
     // Custom CSS
     $bcl_custom_css = get_setting_bcl( 'bcl_custom_css_section', 'bcl_custom_css' );
-    $bcl_custom_css_sanitized = esc_textarea($bcl_custom_css);
+    $bcl_custom_css_sanitized = esc_textarea( $bcl_custom_css );
     if ( $bcl_custom_css !== '' ) {
         echo '<style>' . $bcl_custom_css_sanitized . '</style>';
     }
 
     // Fullscreen Background
-    $bcl_fullscreen_bg = get_setting_bcl('bcl_elements_section', 'bcl_fullscreen_bg');
+    $bcl_fullscreen_bg = get_setting_bcl( 'bcl_elements_section', 'bcl_fullscreen_bg' );
     if ( $bcl_fullscreen_bg !== '' ) {
-        $full_attributes = wp_get_attachment_image_src($bcl_fullscreen_bg, 'full');
+        $full_attributes = wp_get_attachment_image_src( $bcl_fullscreen_bg, 'full' );
         $full = $full_attributes[0] ;
         echo '
                 <div class="background-cover"></div>
