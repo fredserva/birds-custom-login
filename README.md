@@ -1,5 +1,7 @@
 # Birds Custom Login #
 
+[![Build Status](https://travis-ci.org/fredserva/birds-custom-login.svg?branch=master)](https://travis-ci.org/fredserva/birds-custom-login)
+
 **Contributors**: fredserva
 
 **Donate link**: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JDCQYELVWT6T6
