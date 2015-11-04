@@ -1,6 +1,9 @@
 # Birds Custom Login #
 
 [![Build Status](https://travis-ci.org/fredserva/birds-custom-login.svg?branch=master)](https://travis-ci.org/fredserva/birds-custom-login)
+[![Total Downloads](https://img.shields.io/wordpress/plugin/dt/birds-custom-login.svg)](http://wordpress.org/plugins/birds-custom-login/)
+[![WordPress](https://img.shields.io/wordpress/v/birds-custom-login.svg)](http://wordpress.org/plugins/birds-custom-login/)
+[![License](https://img.shields.io/packagist/l/fredserva/birds-custom-login.svg)](http://www.tenbirdsflying.com/theme/birds-custom-login/)
 
 **Contributors**: fredserva
 
