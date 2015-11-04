@@ -10,6 +10,7 @@
     <arg value="sp"/>
     <rule ref="WordPress">
         <exclude name="Generic.Commenting.DocComment.MissingShort" />
+        <exclude name="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed" />
         <exclude name="Generic.Commenting.DocComment.ShortNotCapital" />
         <exclude name="Generic.Commenting.DocComment.SpacingBeforeTags" />
         <exclude name="Generic.ControlStructures.InlineControlStructure.NotAllowed" />
