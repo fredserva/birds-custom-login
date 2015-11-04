@@ -17,6 +17,7 @@
         <exclude name="Generic.Functions.OpeningFunctionBraceKernighanRitchie.BraceOnNewLine" />
         <exclude name="PEAR.Functions.FunctionCallSignature.EmptyLine" />
         <exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
+        <exclude name="PEAR.WhiteSpace.ScopeIndent" />
         <exclude name="Squiz.Commenting.BlockComment.NoNewLine" />
         <exclude name="Squiz.Commenting.ClassComment.Missing" />
         <exclude name="Squiz.Commenting.ClassComment.SpacingBefore" />
@@ -56,6 +57,6 @@
         <exclude name="WordPress.WP.EnqueuedResources" />
         <exclude name="WordPress.WP.PreparedSQL.NotPrepared" />
         <exclude name="WordPress.XSS.EscapeOutput" />
-<!--        <exclude name="Generic.WhiteSpace.ScopeIndent.Incorrect" />-->
+        <exclude name="Generic.WhiteSpace.ScopeIndent.Incorrect" />
     </rule>
 </ruleset>

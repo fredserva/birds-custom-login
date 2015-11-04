@@ -12,6 +12,13 @@ php:
     - 7
     - hhvm
 
+env:
+    - WP_VERSION=latest
+    - WP_VERSION=4.3
+    - WP_VERSION=4.2
+    - WP_VERSION=4.1
+    - WP_VERSION=4.0
+
 branches:
     only:
         - master
