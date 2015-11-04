@@ -168,12 +168,13 @@ if ( ! class_exists( 'Birds_Settings_Bcl' ) ) {
         if ( $this->args['tabs'] && count( $this->settings ) > 1 ) {
     ?>
     <div class="birds-settings-tabs"></div>
-    <?php   }
-            submit_button( $this->args['submit'], 'large primary' );
-            if ( $this->args['reset'] ) {
-                submit_button( $this->args['reset'], 'small', "{$this->page}_reset", true, array( 'onclick' => "return confirm('" . __( 'Do you really want to reset all these settings to their default values?', self::text_domain ) . "');" ) );
-            }
+    <?php
         }
+        submit_button( $this->args['submit'], 'large primary' );
+        if ( $this->args['reset'] ) {
+            submit_button( $this->args['reset'], 'small', "{$this->page}_reset", true, array( 'onclick' => "return confirm('" . __( 'Do you really want to reset all these settings to their default values?', self::text_domain ) . "');" ) );
+        }
+    }
     ?>
 </form>
 <?php }
