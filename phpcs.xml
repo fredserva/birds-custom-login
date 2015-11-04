@@ -1,8 +1,11 @@
 <?xml version="1.0"?>
 <ruleset name="Birds Custom Login">
-    <description>The code standard for Birds Custom Login is WordPress.</description>
+    <description>The code standard for Birds Custom Login</description>
     <file>.</file>
-    <file>./admin</file>
+    <file>uninstall.php</file>
+    <file>admin/settings/apply-css.php</file>
+    <file>admin/settings/class-settings.php</file>
+    <file>admin/settings/settings.php</file>
     <arg name="report" value="full"/>
     <arg value="sp"/>
     <rule ref="WordPress">
