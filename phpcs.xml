@@ -1,11 +1,6 @@
 <?xml version="1.0"?>
 <ruleset name="Birds Custom Login">
     <description>The code standard for Birds Custom Login is WordPress.</description>
-    <file>birds-custom-login.php</file>
-    <file>uninstall.php</file>
-    <file>admin/settings/apply-css.php</file>
-    <file>admin/settings/class-settings.php</file>
-    <file>admin/settings/settings.php</file>
     <arg name="report" value="full"/>
     <arg value="sp"/>
     <rule ref="WordPress">
@@ -16,6 +11,7 @@
         <exclude name="Generic.ControlStructures.InlineControlStructure.NotAllowed" />
         <exclude name="Generic.Files.LowercasedFilename.NotFound" />
         <exclude name="Generic.Functions.OpeningFunctionBraceKernighanRitchie.BraceOnNewLine" />
+        <exclude name="Generic.WhiteSpace.ScopeIndent.Incorrect" />
         <exclude name="PEAR.Functions.FunctionCallSignature.EmptyLine" />
         <exclude name="PEAR.WhiteSpace.ScopeIndent" />
         <exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
@@ -62,6 +58,5 @@
         <exclude name="WordPress.WP.EnqueuedResources" />
         <exclude name="WordPress.WP.PreparedSQL.NotPrepared" />
         <exclude name="WordPress.XSS.EscapeOutput" />
-        <exclude name="Generic.WhiteSpace.ScopeIndent.Incorrect" />
     </rule>
 </ruleset>
