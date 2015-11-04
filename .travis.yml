@@ -11,15 +11,28 @@ php:
     - 5.4
 
 env:
-    - WP_PROJECT_TYPE=plugin WP_VERSION=latest WP_MULTISITE=0 WP_TEST_URL=http://localhost:12000 WP_TEST_USER=test WP_TEST_USER_PASS=test
+    - WP_VERSION=master WP_MULTISITE=0
+    - WP_VERSION=4.3 WP_MULTISITE=0
+    - WP_VERSION=4.2 WP_MULTISITE=0
+    - WP_VERSION=4.1 WP_MULTISITE=0
+    - WP_VERSION=4.0 WP_MULTISITE=0
 
 # Grab the setup script and execute
 before_script:
-    - git clone https://github.com/Seravo/wordpress-test-template wp-tests
-    - bash wp-tests/bin/install-wp-tests.sh test root '' localhost $WP_VERSION
+    - export PLUGIN_SLUG=$(basename $(pwd))
+    - git clone --depth=50 --branch="$WP_VERSION" git://develop.git.wordpress.org/ /tmp/wordpress
+    - cd ..
+    - mv "$PLUGIN_SLUG" "/tmp/wordpress/src/wp-content/plugins/$PLUGIN_SLUG"
+    - cd /tmp/wordpress
+    - mysql -e "CREATE DATABASE wordpress_tests;" -uroot
+    - cp wp-tests-config-sample.php wp-tests-config.php
+    - sed -i "s/youremptytestdbnamehere/wordpress_tests/" wp-tests-config.php
+    - sed -i "s/yourusernamehere/travis/" wp-tests-config.php
+    - sed -i "s/yourpasswordhere//" wp-tests-config.php
+    - cd "/tmp/wordpress/src/wp-content/plugins/$PLUGIN_SLUG"
 
 script:
-    - cd wp-tests/spec && bundle exec rspec test.rb
+    phpunit
 
 branches:
     only:
