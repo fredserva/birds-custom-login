@@ -48,4 +48,4 @@ script:
     - $PHPCS_DIR/scripts/phpcs
 
 notifications:
-email: false
+    email: false

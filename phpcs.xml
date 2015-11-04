@@ -56,6 +56,6 @@
         <exclude name="WordPress.WP.EnqueuedResources" />
         <exclude name="WordPress.WP.PreparedSQL.NotPrepared" />
         <exclude name="WordPress.XSS.EscapeOutput" />
-        <exclude name="Generic.WhiteSpace.ScopeIndent.Incorrect" />
+<!--        <exclude name="Generic.WhiteSpace.ScopeIndent.Incorrect" />-->
     </rule>
 </ruleset>
