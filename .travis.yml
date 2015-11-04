@@ -12,14 +12,18 @@ php:
     - 7
     - hhvm
 
+branches:
+    only:
+        - master
+
 matrix:
+    fast_finish: true
     allow_failures:
         - php: 7
         - php: hhvm
 
 before_script:
     - composer self-update
-    - composer install --prefer-source --no-interaction --dev
 
 # Run test script commands.
 # All commands must exit with code 0 on success. Anything else is considered failure.
