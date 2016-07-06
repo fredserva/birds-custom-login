@@ -1,5 +1,7 @@
 # Birds Custom Login #
 
+[![Join the chat at https://gitter.im/fredserva/birds-custom-login](https://badges.gitter.im/fredserva/birds-custom-login.svg)](https://gitter.im/fredserva/birds-custom-login?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build Status](https://travis-ci.org/fredserva/birds-custom-login.svg?branch=master)](https://travis-ci.org/fredserva/birds-custom-login)
 [![Wordpress plugin](http://img.shields.io/wordpress/plugin/v/birds-custom-login.svg)](https://wordpress.org/plugins/birds-custom-login/)
 [![Total Downloads](https://img.shields.io/wordpress/plugin/dt/birds-custom-login.svg)](https://wordpress.org/plugins/birds-custom-login/)
