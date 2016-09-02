@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Birds Custom Login\n"
-"POT-Creation-Date: 2016-08-11 11:49+0100\n"
-"PO-Revision-Date: 2016-08-11 11:49+0100\n"
+"POT-Creation-Date: 2016-09-02 14:23+0100\n"
+"PO-Revision-Date: 2016-09-02 14:26+0100\n"
 "Last-Translator: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language-Team: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language: pt_PT\n"
@@ -16,6 +16,7 @@ msgstr ""
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-WPHeader: birds-custom-login.php\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: admin/settings/apply-css.php:350 admin/settings/settings.php:41
@@ -66,6 +67,7 @@ msgstr "Nenhuma ação definida."
 msgid "Custom Login Settings"
 msgstr "Definições do início de sessão personalizado"
 
+#. Plugin Name of the plugin/theme
 #: admin/settings/settings.php:22
 msgid "Birds Custom Login"
 msgstr "Birds Custom Login"
@@ -424,3 +426,23 @@ msgstr ""
 #: admin/settings/settings.php:281
 msgid "Go Premium Now!"
 msgstr "Obter Premium Agora!"
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.tenbirdsflying.com/theme/birds-custom-login/"
+msgstr "http://www.tenbirdsflying.com/theme/birds-custom-login/"
+
+#. Description of the plugin/theme
+msgid ""
+"Birds Custom Login allows you to easily customize your admin login page "
+"according to your needs."
+msgstr ""
+"O Birds Custom Login permite-lhe facilmente personalizar a página de início "
+"de sessão, de acordo com as suas necessidades."
+
+#. Author of the plugin/theme
+msgid "Frédéric Serva"
+msgstr "Frédéric Serva"
+
+#. Author URI of the plugin/theme
+msgid "http://www.tenbirdsflying.com/"
+msgstr "http://www.tenbirdsflying.com/"
