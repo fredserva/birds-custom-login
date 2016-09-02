@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Birds Custom Login\n"
 "POT-Creation-Date: 2016-09-02 14:23+0100\n"
-"PO-Revision-Date: 2016-09-02 14:26+0100\n"
+"PO-Revision-Date: 2016-09-02 14:36+0100\n"
 "Last-Translator: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language-Team: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language: pt_PT\n"
@@ -61,7 +61,7 @@ msgstr "Remover %s"
 
 #: admin/settings/class-settings.php:294
 msgid "No action defined."
-msgstr "Nenhuma ação definida."
+msgstr "Nenhuma acção definida."
 
 #: admin/settings/settings.php:19
 msgid "Custom Login Settings"
