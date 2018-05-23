@@ -1,11 +1,7 @@
 # Birds Custom Login #
 
-[![Build Status](https://travis-ci.org/fredserva/birds-custom-login.svg?branch=master)](https://travis-ci.org/fredserva/birds-custom-login)
 [![Wordpress plugin](http://img.shields.io/wordpress/plugin/v/birds-custom-login.svg)](https://wordpress.org/plugins/birds-custom-login/)
 [![Total Downloads](https://img.shields.io/wordpress/plugin/dt/birds-custom-login.svg)](https://wordpress.org/plugins/birds-custom-login/)
-[![WordPress Rating](https://img.shields.io/wordpress/plugin/r/birds-custom-login.svg)](https://wordpress.org/plugins/birds-custom-login/)
-[![WordPress](https://img.shields.io/wordpress/v/birds-custom-login.svg)](https://wordpress.org/plugins/birds-custom-login/)
-[![Join the chat at https://gitter.im/fredserva/birds-custom-login](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/fredserva/birds-custom-login?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 **Contributors**: fredserva
 
@@ -15,7 +11,7 @@
 
 **Requires at least**: 4.0
 
-**Tested up to**: 4.4
+**Tested up to**: 4.9.6
 
 **Stable tag**: 1.0.8
 
