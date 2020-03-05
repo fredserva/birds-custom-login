@@ -1,24 +1,25 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Birds Custom Login\n"
-"POT-Creation-Date: 2015-11-03 16:32+0100\n"
-"PO-Revision-Date: 2015-11-03 16:09+0000\n"
+"POT-Creation-Date: 2016-09-02 14:23+0100\n"
+"PO-Revision-Date: 2016-09-02 14:36+0100\n"
 "Last-Translator: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language-Team: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.8.8\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-WPHeader: birds-custom-login.php\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: admin/settings/apply-css.php:355 admin/settings/settings.php:41
+#: admin/settings/apply-css.php:350 admin/settings/settings.php:41
 msgid "Powered by WordPress"
 msgstr "Criado com WordPress"
 
@@ -38,34 +39,35 @@ msgstr "Repor definições"
 msgid "Default settings have been reset."
 msgstr "As definições padrão foram repostas."
 
-#: admin/settings/class-settings.php:172
+#: admin/settings/class-settings.php:175
 msgid "Do you really want to reset all these settings to their default values?"
 msgstr ""
 "Tem a certeza que pretende repor todas as definições para os valores padrão?"
 
-#: admin/settings/class-settings.php:242 admin/settings/class-settings.php:253
-#: admin/settings/class-settings.php:281
+#: admin/settings/class-settings.php:243 admin/settings/class-settings.php:254
+#: admin/settings/class-settings.php:282
 msgid "No options defined."
 msgstr "Nenhuma opção definida."
 
-#: admin/settings/class-settings.php:264
+#: admin/settings/class-settings.php:265
 #, php-format
 msgid "Select %s"
 msgstr "Seleccionar %s"
 
-#: admin/settings/class-settings.php:265
+#: admin/settings/class-settings.php:266
 #, php-format
 msgid "Remove %s"
 msgstr "Remover %s"
 
 #: admin/settings/class-settings.php:294
 msgid "No action defined."
-msgstr "Nenhuma ação definida."
+msgstr "Nenhuma acção definida."
 
 #: admin/settings/settings.php:19
 msgid "Custom Login Settings"
 msgstr "Definições do início de sessão personalizado"
 
+#. Plugin Name of the plugin/theme
 #: admin/settings/settings.php:22
 msgid "Birds Custom Login"
 msgstr "Birds Custom Login"
@@ -316,7 +318,7 @@ msgid ""
 "If you've choosen a fullscreen image background, scroll down to make it "
 "appear..."
 msgstr ""
-"Se escolheu uma imagem de fundo em ecrã completo, deslize para baixo para a "
+"Se escolheu uma imagem de fundo em ecrã inteiro, deslize para baixo para a "
 "fazer aparecer..."
 
 #: admin/settings/settings.php:225
@@ -381,8 +383,7 @@ msgstr "Ligações para imagens externas"
 
 #: admin/settings/settings.php:271
 msgid "Fullscren background image or not. And controls over its position."
-msgstr ""
-"Imagem de fundo em tamanho completo ou não. Controlos sobre a sua posição."
+msgstr "Imagem de fundo em ecrã inteiro ou não. Controlos sobre a sua posição."
 
 #: admin/settings/settings.php:272
 msgid "Instant preview (for Custom CSS too)"
@@ -425,3 +426,23 @@ msgstr ""
 #: admin/settings/settings.php:281
 msgid "Go Premium Now!"
 msgstr "Obter Premium Agora!"
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.tenbirdsflying.com/theme/birds-custom-login/"
+msgstr "http://www.tenbirdsflying.com/theme/birds-custom-login/"
+
+#. Description of the plugin/theme
+msgid ""
+"Birds Custom Login allows you to easily customize your admin login page "
+"according to your needs."
+msgstr ""
+"O Birds Custom Login permite-lhe facilmente personalizar a página de início "
+"de sessão, de acordo com as suas necessidades."
+
+#. Author of the plugin/theme
+msgid "Frédéric Serva"
+msgstr "Frédéric Serva"
+
+#. Author URI of the plugin/theme
+msgid "http://www.tenbirdsflying.com/"
+msgstr "http://www.tenbirdsflying.com/"
