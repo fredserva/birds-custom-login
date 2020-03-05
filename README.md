@@ -1,6 +1,5 @@
 # Birds Custom Login #
 
-[![Wordpress plugin](http://img.shields.io/wordpress/plugin/v/birds-custom-login.svg)](https://wordpress.org/plugins/birds-custom-login/)
 [![Total Downloads](https://img.shields.io/wordpress/plugin/dt/birds-custom-login.svg)](https://wordpress.org/plugins/birds-custom-login/)
 
 **Contributors**: fredserva
